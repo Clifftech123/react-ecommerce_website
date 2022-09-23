@@ -5,9 +5,13 @@ module.exports = {
 		extend: {
 			colors: {
 				LogoColor: "#F7DF1E",
-				Navbar_text_color: "#FF4E00",
-				bntColor: "#3481D6EF",
-				TextColor: "#222429",
+				NavbarBgColor: "#04293c",
+				Navbar_text_color: "#55758a",
+				bntColor: "#cd7059",
+				TextColor: "#04293c",
+			},
+			fontFamily: {
+				Poppins: ["Poppins", " sans-serif"],
 			},
 		},
 	},
