@@ -1,88 +1,74 @@
-import React from 'react'
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Signup = () => {
 	const Navigate = useNavigate();
-  return (
+	return (
 		<>
-			<div className="relative  flex flex-col justify-center min-h-screen overflow-hidden">
-				<div className=" w-full  shadow-md md:w-screen p-10 m-auto bg-white rounded-md lg:max-w-xl">
-					<h1 className="text-3xl font-semibold text-center   uppercase decoration-wavy">
+			<div className="relative mx-10 md:mx-0 flex flex-col justify-center min-h-screen overflow-hidden">
+				<div className=" w-full   shadow-lg md:w-screen p-5 m-auto  border-NavbarBgColor bg-white rounded-md lg:max-w-xl">
+					<h1 className="text-4xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
 						Sign UP
 					</h1>
-					<form className="mt-6">
-						<div className="mb-2">
-							<label
-								for="email"
-								className="block text-sm font-semibold text-gray-800"
-							>
-								First Name
-							</label>
+					{/* FORM */}
+					<form className="mt-2 p-7">
+						<div className="mb-2 ">
+							{/* FIRST NAME */}
 							<input
-								type="email"
-								className="block w-full px-4 py-2 mt-2  bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								type="text"
+								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								placeholder="First Name"
 							/>
 						</div>
 						<div className="mb-2">
-							<label
-								for="email"
-								className="block text-sm font-semibold text-gray-800"
-							>
-								Last Name
-							</label>
+							{/* LASTNAME */}
 							<input
-								type="email"
-								className="block w-full px-4 py-2 mt-2  bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								type="text"
+								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								placeholder="Last Name"
 							/>
 						</div>
 						<div className="mb-2">
-							<label
-								for="email"
-								className="block text-sm font-semibold text-gray-800"
-							>
-								Email
-							</label>
+							{/* EMAIL */}
 							<input
 								type="email"
-								className="block w-full px-4 py-2 mt-2  bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								className=" p-24 w-full px-10 py-4 mt-2 font-Poppins text-lg border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none  focus:ring focus:ring-opacity-40"
+								placeholder="Email"
 							/>
 						</div>
+						{/* PASSWORD */}
 						<div className="mb-2">
-							<label
-								for="password"
-								className="block text-sm font-semibold text-gray-800"
-							>
-								Password
-							</label>
 							<input
 								type="password"
 								required
-								className="block w-full px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								className="block w-full px-10 py-4   font-Poppins text-lg mt-2  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								placeholder="Password"
 							/>
 						</div>
+						{/* SUBMIT */}
 						<div className="mt-6">
 							<button
 								type="submit "
 								onClick={() => Navigate("/login")}
-								className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-indigo-700 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
+								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white bg-indigo-600 hover:bg-indigo-700
+                             focus:outline-none focus:ring-2 focus:ring-offset-2
+                             focus:ring-indigo-500 rounded-md "
 							>
-								Login
+								Create Account
 							</button>
 						</div>
 					</form>
 
-					<p className="mt-8 text-xs font-lg text-center text-gray-700">
-						
+					<p className="mt-8 text-lg font-Poppins  text-center text-gray-700">
 						Already have an account?{" "}
-						<a href="/" className=" text-indigo-600 hover:underline">
-							Sign in
-						</a>
+						<span className="text-indigo-600">
+							<NavLink to="/login"> Sign in </NavLink>
+						</span>
 					</p>
 				</div>
 			</div>
 		</>
 	);
-}
-
+};
 
 export default Signup;
