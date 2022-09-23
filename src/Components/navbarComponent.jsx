@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBarComponent = () => {
 	// TOGGLE
@@ -9,8 +10,8 @@ const NavBarComponent = () => {
 	return (
 		<>
 			{/*================ START  NAVBAR COMPONENT ========================*/}
-			<nav className="   w-full bg-white shadow -sm">
-				<div className="      justify-between  px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 font">
+			<nav className=" w-full bg-NavbarBgColor font-light text-gray-200 shadow -sm">
+				<div className=" justify-between  px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 font-Poppins">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
 							<h2 className="  text-2xl  font-Poppins  text-LogoColor ">
@@ -61,15 +62,18 @@ const NavBarComponent = () => {
 							className={`flex-1  text-lg    text-center pb-3 mt-8 md:block  md:pb-0 md:mt-0 ${
 								navbar ? "block   " : "hidden"
 							}`}
-						>
+						> 
+						{/* NAV ITEMS */}
 							<ul className="items-center   text-2xl  justify-center space-y-8 md:flex md:space-x-10  md:space-y-0  md:divide-y-0">
-								<li className="  ">Home</li>
+								<li className="  ">
+									<NavLink to='/'> Home</NavLink>
+								</li>
 								<li className=" "> Phones </li>
 								<li className=" "> Food </li>
 								<li className=""> Cloths</li>
 								<li className=" "> Dashboard</li>
 								<div>
-									{/* Social links it automatically hidden in the small device  */}
+									
 									<ul className=" hidden text-2xl  mt-5 ml-20   md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
 										<div className="m-2 ">
 											<span>
@@ -91,10 +95,10 @@ const NavBarComponent = () => {
 												</button>
 											</span>
 										</div>
-										<li className="p-4">
+										<li className="p-4 text-white">
 											<FaGithub />
 										</li>
-										<li className="p-4">
+										<li className="p-4 text-white">
 											<FaGithub />
 										</li>
 									</ul>
