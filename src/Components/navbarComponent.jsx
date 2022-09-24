@@ -14,7 +14,7 @@ const NavBarComponent = () => {
 				<div className=" justify-between  px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 font-Poppins">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
-							<h2 className="  text-2xl  font-Poppins  text-LogoColor ">
+							<h2 className="  text-2xl  font-Poppins  text-bntColor ">
 								Adom.com
 							</h2>
 
@@ -62,19 +62,18 @@ const NavBarComponent = () => {
 							className={`flex-1  text-lg    text-center pb-3 mt-8 md:block  md:pb-0 md:mt-0 ${
 								navbar ? "block   " : "hidden"
 							}`}
-						> 
-						{/* NAV ITEMS */}
+						>
+							{/* NAV ITEMS */}
 							<ul className="items-center   text-2xl  justify-center space-y-8 md:flex md:space-x-10  md:space-y-0  md:divide-y-0">
 								<li className="  ">
-									<NavLink to='/'> Home</NavLink>
+									<NavLink to="/"> Home</NavLink>
 								</li>
 								<li className=" "> Phones </li>
 								<li className=" "> Food </li>
 								<li className=""> Cloths</li>
 								<li className=" "> Dashboard</li>
 								<div>
-									
-									<ul className=" hidden text-2xl  mt-5 ml-20   md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
+									<ul className=" text-2xl  mt-5 ml-20   md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
 										<div className="m-2 ">
 											<span>
 												<button
