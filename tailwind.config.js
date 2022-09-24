@@ -12,6 +12,7 @@ module.exports = {
 			},
 			fontFamily: {
 				Poppins: ["Poppins", " sans-serif"],
+				Arimo: ["Arimo", " sans-serif"],
 			},
 		},
 	},
