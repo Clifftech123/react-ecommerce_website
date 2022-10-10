@@ -6,7 +6,7 @@ const Signup = () => {
 	return (
 		<>
 			<div className="relative mx-10 md:mx-0 flex flex-col justify-center min-h-screen overflow-hidden">
-				<div className=" w-full shadow md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
+				<div className=" w-full shadow-lg md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
 					<h1 className="text-4xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
 						Sign UP
 					</h1>
