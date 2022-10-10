@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub,FaTwitter } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
@@ -94,11 +94,18 @@ const NavBarComponent = () => {
 												</button>
 											</span>
 										</div>
-										<li className="p-4 text-white">
+										{/* SOCIAL ICONS  */}
+										<li
+											title="Github"
+											className="  hidden lg:block p-4 text-white"
+										>
 											<FaGithub />
 										</li>
-										<li className="p-4 text-white">
-											<FaGithub />
+										<li
+											title="tWitter"
+											className=" hidden lg:block   p-4 text-white"
+										>
+											<FaTwitter />
 										</li>
 									</ul>
 								</div>
