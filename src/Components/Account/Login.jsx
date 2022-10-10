@@ -1,33 +1,33 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Logins = () => {
-  return (
+	return (
 		<>
 			<div className="h-full relative mx-20  flex  justify-center min-h-screen overflow-hidden  items-center  sm:px-6 lg:px-8">
-				<div className="max-w-md  py-10  px-15 shadow border border-indigo-100  bg-white w-full space-y-5">
+				<div className="max-w-md  py-10  px-15 shadow-lg border border-indigo-100  bg-white w-full space-y-5">
 					<div>
 						<h2 className=" text-center text-3xl mt-5 mb-0 font-Poppins text-gray-900">
 							Sign in to your account
 						</h2>
 					</div>
-          {/* FORM */}
+					{/* FORM */}
 					<form className="mt-2 p-10  space-y-6" action="#" method="POST">
 						<div className="rounded-md  p-30 shadow-sm ">
-            {/* EMAIL */}
+							{/* EMAIL */}
 							<input
 								id="email-address"
 								name="email"
 								type="email"
 								required
 								className=" text-lg  font-Poppins relative block
-                  w-full px-10 py-5 border border-gray-300
-                  placeholder-gray-500 text-gray-900 rounded-lg
-                  focus:outline-none focus:ring-indigo-500
-                  focus:border-indigo-500 focus:z-10 sm:text-sm"
+                              w-full px-10 py-5 border border-gray-300
+                             placeholder-gray-500 text-gray-900 rounded-lg
+                              focus:outline-none focus:ring-indigo-500
+                            focus:border-indigo-500 focus:z-10 sm:text-sm"
 								placeholder="Email address"
 							/>
-              {/* PASSWORD */}
+							{/* PASSWORD */}
 							<div className="">
 								<input
 									id="password"
@@ -44,7 +44,7 @@ const Logins = () => {
 								/>
 							</div>
 						</div>
-             {/* LOGINS BUTTON  */}
+						{/* LOGINS BUTTON  */}
 						<div>
 							<button
 								type="submit"
@@ -58,7 +58,7 @@ const Logins = () => {
 							</button>
 						</div>
 					</form>
-          
+
 					<p className=" text-lg font-Poppins mb-5 text-center text-gray-700">
 						I don't have account ?{" "}
 						<span className="text-indigo-600">
@@ -69,6 +69,6 @@ const Logins = () => {
 			</div>
 		</>
 	);
-}
+};
 
 export default Logins;
