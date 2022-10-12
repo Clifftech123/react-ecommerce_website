@@ -50,7 +50,7 @@ const Signup = () => {
 							<button
 								type="submit "
 								onClick={() => Navigate("/login")}
-								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white bg-indigo-600 hover:bg-indigo-700
+								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white  bg-NavbarBgColor hover:bg-indigo-700
                              focus:outline-none focus:ring-2 focus:ring-offset-2
                              focus:ring-indigo-500 rounded-md "
 							>
