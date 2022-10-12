@@ -1,10 +1,36 @@
 import React from 'react'
 import introImage from '.././Components/Images/shoppingOne.svg'
-import CardImage from ".././Components/Images/shoppingTwo.svg";
-import Services from ".././Components/Images/Customer service_Flatline.svg";
+import text from '../Components/Images/text.svg'
 
+ 
 const HomePage = () => {
-  return (
+	
+	// CARD INFROMATION
+	const posts = [
+		{
+			title: "Product",
+			img: "https://cdn2.mageplaza.com/media/general/ecommerce-product-photo.jpg",
+			content:
+				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+		},
+		{
+			title: "Costumer Support",
+			img: "https://www.revechat.com/wp-content/uploads/2022/02/customer-support-2-1280x720.jpg",
+			content:
+				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+		},
+		{
+			title: " Constutation",
+			img: "https://wecarecomputers.com/wp-content/uploads/2018/02/consultation.jpg",
+			content:
+				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+		},
+	];
+
+
+
+	// RETUEMWNT OF CONTENT
+	return (
 		<>
 			{/* INTRO SECTION */}
 			<div id="Introduction" className="Introduction text-center">
@@ -19,7 +45,7 @@ const HomePage = () => {
 									alt="SVG img "
 								/>
 							</div>
-							<h1 className="mt-6 text-2xl font-Poppins font-bold text-NavbarBgColor sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+							<h1 className=" tracking-normal  mt-6 text-2xl font-Poppins font-bold  text-bntColor sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
 								Take Your online Shopping
 								<br className="hidden lg:inline" />
 								<span className="text-G_Purple">
@@ -28,7 +54,7 @@ const HomePage = () => {
 								</span>
 							</h1>
 							{/* INTRODUCTION TEXT  */}
-							<p className=" text-lg text-white font-Arimo mt-2  sm:mt-4 sm:text-xl">
+							<p className=" tracking-wide text-lg text-white font-Arimo mt-2  sm:mt-4 sm:text-xl">
 								An e-commerce website is one that allows people to buy and sell
 								physical goods, services, and digital products over the internet
 								rather than at a brick-and-mortar location. Through an
@@ -50,99 +76,85 @@ const HomePage = () => {
 				</div>
 			</div>
 
-			{/*====================== CARD SECTION========================  */}
-			<div className=" lg:px-2/4 py-10 px-10 md:px-80 lg:py-20  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:gap-x-7 gap-5">
-				{/*FIRST CARD */}
-				<div className=" overflow-hidden rounded-xl border p-1  hover:shadow-lg  bg-white  shadow-sm">
-					<img
-						className=" w-full object-cover object-center"
-						src={
-							"https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHByb2R1Y3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-						}
-						alt="Programing"
-					/>
-					<div className="">
-						<div className=" font-Poppins  text-3xl text-center m-2">
-							Product
-						</div>
-						<p className="text-gray-700 text-lg p-10">
-							Learning to code not only allows you to give machines
-							instructions, but it also teaches you abstract thinking and
-							problem-solving. In fact, problem-solving skills and creativity
-							are key to becoming a successful computer programmer. Of course,
-							you'll also need to know some coding languages to apply your
-							knowledge.
-						</p>
-					</div>
+			{/*====================== WELCOME TEXT ========================  */}
+			{/* <section id="Welcome_text">
+				<div className="text-center align-middle">
+					<h1 className=" text-3xl mt-10 text-black lg:font-bold">
+						{" "}
+						Your welcome to Our services. We give you best costumer Experience{" "}
+					</h1>
+					<p className="lg:px-40 px-10 text-2xl ">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+						mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+						voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+						fugiat iusto fuga praesentium optio, eaque rerum! Provident
+						similique accusantium nemo autem.
+					</p>
 				</div>
-				{/*= SECOND  CARD */}
-				<div className=" overflow-hidden    rounded-xl border p-1  hover:shadow-lg  bg-white  shadow-sm">
-					<img
-						className="  py-1  h-screen w-full object-cover object-center"
-						src={
-							"https://images.unsplash.com/photo-1560264357-8d9202250f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvc3R1bWVyJTIwc2VydmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-						}
-						alt="Programing"
-					/>
-					<div className="">
-						<div className=" font-Poppins   text-3xl text-center mt-2">
-							Costumer service
+			</section> */}
+
+			{/*====================== 3 CARD SECTION ========================  */}
+			<section id="Card_section">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20  px-10 lg:px-40 ml-20">
+					{posts.map((items, key) => (
+						<div
+							className="w-full shadow-sm Lg:shadow-lg mt-10  hover:shadow-xl align-middle justify-center rounded-lg  lg:max-w-md  bg-white"
+							key={key}
+						>
+							<img
+								className="object-cover w-full h-48"
+								src={items.img}
+								alt="imag"
+							/>
+							<div className="p-4">
+								<h4 className="text-xl font-semibold text-blue-600">
+									{items.title}
+								</h4>
+								<p className="mb-2 leading-normal">{items.content}</p>
+							</div>
 						</div>
-						<p className="text-gray-700 text-lg p-10">
-							Learning to code not only allows you to give machines
-							instructions, but it also teaches you abstract thinking and
-							problem-solving. In fact, problem-solving skills and creativity
-							are key to becoming a successful computer programmer. Of course,
-							you'll also need to know some coding languages to apply your
-							knowledge.
+					))}
+				</div>
+			</section>
+
+			{/*====================== CONENT WITH IAMGE SECTION  ========================  */}
+			<section id="Content"  className='bg-white' >
+				<div className="grid gap-2  lg:grid-cols-2 mt-20">
+					<div className="">
+						<img className="px-40 w-full " src={text} alt="" />
+					</div>
+					<div className="mt-40 px-40">
+						<h1>
+							An e-commerce website is one that allows people to buy and sell
+						</h1>
+						<p>
+							An e-commerce website is one that allows people to buy and sell
+							physical goods, services, and digital products over the internet
+							rather than at a brick-and-mortar location. Through an e-commerce
+							website, a business can process orders, accept payments, manage
+							shipping and logistics, and provide customer service.1
 						</p>
 					</div>
 				</div>
 
-				{/*THIRD IMAGE */}
-				<div className=" overflow-hidden   rounded-xl border p-1  hover:shadow-lg  bg-white  shadow-sm">
-					<img
-						className="   sm:w-full sm:object-cover sm:object-center"
-						src={Services}
-						alt="Programing"
-					/>
-					<div className="">
-						<div className=" font-Poppins   text-3xl text-center mb-2">
-							Discount Options
-						</div>
-						<p className="text-gray-700 text-base mb-5">
-							Learning to code not only allows you to give machines
-							instructions, but it also teaches you abstract thinking and
-							problem-solving. In fact, problem-solving skills and creativity
-							are key to becoming a successful computer programmer. Of course,
-							you'll also need to know some coding languages to apply your
-							knowledge.
+				<div className="grid gap-2  lg:grid-cols-2 mt-20">
+					<div className="mt-40 px-40">
+						<h1>
+							An e-commerce website is one that allows people to buy and sell
+						</h1>
+						<p>
+							An e-commerce website is one that allows people to buy and sell
+							physical goods, services, and digital products over the internet
+							rather than at a brick-and-mortar location. Through an e-commerce
+							website, a business can process orders, accept payments, manage
+							shipping and logistics, and provide customer service.1
 						</p>
 					</div>
-				</div>
-
-				{/* FOURTH CARD */}
-				<div className=" overflow-hidden   rounded-xl border p-1  hover:shadow-lg  bg-white  shadow-sm">
-					<img
-						className="   sm:w-full sm:object-cover sm:object-center"
-						src={CardImage}
-						alt="Programing"
-					/>
 					<div className="">
-						<div className=" font-Poppins   text-3xl text-center mb-2">
-							Free Delivery
-						</div>
-						<p className="text-gray-700 text-base mb-5">
-							Learning to code not only allows you to give machines
-							instructions, but it also teaches you abstract thinking and
-							problem-solving. In fact, problem-solving skills and creativity
-							are key to becoming a successful computer programmer. Of course,
-							you'll also need to know some coding languages to apply your
-							knowledge.
-						</p>
+						<img className="px-40 w-full " src={text} alt="" />
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 }
