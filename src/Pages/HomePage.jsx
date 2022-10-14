@@ -1,6 +1,7 @@
 import React from 'react'
 import introImage from '.././Components/Images/shoppingOne.svg'
-import text from '../Components/Images/text.svg'
+import FirstContent from '../Components/Images/fFirstContetn.svg'
+import SecondContent from "../Components/Images/SecondConttent.svg";
 
  
 const HomePage = () => {
@@ -29,7 +30,7 @@ const HomePage = () => {
 
 
 
-	// RETUEMWNT OF CONTENT
+	// RETIREMENT OF CONTENT
 	return (
 		<>
 			{/* INTRO SECTION */}
@@ -76,29 +77,12 @@ const HomePage = () => {
 				</div>
 			</div>
 
-			{/*====================== WELCOME TEXT ========================  */}
-			{/* <section id="Welcome_text">
-				<div className="text-center align-middle">
-					<h1 className=" text-3xl mt-10 text-black lg:font-bold">
-						{" "}
-						Your welcome to Our services. We give you best costumer Experience{" "}
-					</h1>
-					<p className="lg:px-40 px-10 text-2xl ">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-						mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-						voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-						fugiat iusto fuga praesentium optio, eaque rerum! Provident
-						similique accusantium nemo autem.
-					</p>
-				</div>
-			</section> */}
-
 			{/*====================== 3 CARD SECTION ========================  */}
 			<section id="Card_section">
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20  px-10 lg:px-40 ml-20">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-10 lg:px-40 ml-20">
 					{posts.map((items, key) => (
 						<div
-							className="w-full shadow-sm Lg:shadow-lg mt-10  hover:shadow-xl align-middle justify-center rounded-lg  lg:max-w-md  bg-white"
+							className="w-full shadow-sm Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   lg:max-w-md  bg-white"
 							key={key}
 						>
 							<img
@@ -107,10 +91,10 @@ const HomePage = () => {
 								alt="imag"
 							/>
 							<div className="p-4">
-								<h4 className="text-xl font-semibold text-blue-600">
+								<h4 className="text-2xl  mb-5 font-Poppins text-bntColor ">
 									{items.title}
 								</h4>
-								<p className="mb-2 leading-normal">{items.content}</p>
+								<p className="mb-2 leading-normal text-xl ">{items.content}</p>
 							</div>
 						</div>
 					))}
@@ -118,43 +102,52 @@ const HomePage = () => {
 			</section>
 
 			{/*====================== CONENT WITH IAMGE SECTION  ========================  */}
-			<section id="Content"  className='bg-white' >
+			{/* FIRST ROW  */}
+			<section id="Content" className="bg-white">
 				<div className="grid gap-2  lg:grid-cols-2 mt-20">
-					<div className="">
-						<img className="px-40 w-full " src={text} alt="" />
+					<div className="md:p-20 ">
+						<img className="w-full " src={FirstContent} alt="" />
 					</div>
-					<div className="mt-40 px-40">
-						<h1>
-							An e-commerce website is one that allows people to buy and sell
-						</h1>
-						<p>
-							An e-commerce website is one that allows people to buy and sell
-							physical goods, services, and digital products over the internet
-							rather than at a brick-and-mortar location. Through an e-commerce
-							website, a business can process orders, accept payments, manage
-							shipping and logistics, and provide customer service.1
-						</p>
+					<div className="md::mt-40 md:px-40 ">
+						<div className="md:py-60 px-10">
+							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+								An e-commerce website is one that allows people to buy and sell
+							</h1>
+							<p className="text-2xl  font-serif">
+								An e-commerce website is one that allows people to buy and sell
+								physical goods, services, and digital products over the internet
+							</p>
+						</div>
 					</div>
 				</div>
 
-				<div className="grid gap-2  lg:grid-cols-2 mt-20">
-					<div className="mt-40 px-40">
-						<h1>
-							An e-commerce website is one that allows people to buy and sell
-						</h1>
-						<p>
-							An e-commerce website is one that allows people to buy and sell
-							physical goods, services, and digital products over the internet
-							rather than at a brick-and-mortar location. Through an e-commerce
-							website, a business can process orders, accept payments, manage
-							shipping and logistics, and provide customer service.1
-						</p>
+				{/* SECOND ROW  */}
+
+				<div className="grid gap-2 mt-40 md:mt-0 lg:grid-cols-2 ">
+					<div className="md:hidden  mt-20">
+					{/* IMAGE SHOWING IN PHONE AND TABLET MODE */}
+						<img className=" w-full " src={SecondContent} alt="" />
 					</div>
-					<div className="">
-						<img className="px-40 w-full " src={text} alt="" />
+					<div className="lg:mt-40 lg:px-40">
+						<div className=" px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor text-4xl md:mb-5 font-bold">
+								An e-commerce website is one that allows people to buy and sell
+							</h1>
+							<p className="text-2xl  font-serif">
+								An e-commerce website is one that allows people to buy and sell
+								physical goods, services, and digital products over the internet
+							</p>
+						</div>
+					</div>
+					{/* IMAGE SHOWING IN LARGE  MODE  */}
+					<div className=" hidden md:block lg:p-20">
+						<img className=" w-full " src={SecondContent} alt="" />
 					</div>
 				</div>
 			</section>
+
+			{/* =============RECOMMENDATION SECTION=============  */}
+			
 		</>
 	);
 }
