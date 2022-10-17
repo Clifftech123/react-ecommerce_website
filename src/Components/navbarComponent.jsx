@@ -73,26 +73,18 @@ const NavBarComponent = () => {
 								<li className=""> Cloths</li>
 								<li className=" "> Dashboard</li>
 								<div>
-									<ul className=" text-2xl  mt-5 ml-20   md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
+									<ul className=" text-2xl  mt-5    md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
 										<div className="m-2 ">
 											<span>
 												<button
-													className=" bg-bntColor p-2 w-40  m-2 rounded-lg   text-white"
+													className=" center bg-bntColor p-2 w-40  m-2 rounded-lg   text-white"
 													onClick={() => Navigate("/login")}
 													type="button"
 												>
 													Login{" "}
 												</button>
 											</span>
-											<span>
-												<button
-													className="  bg-bntColor p-2  m-2 rounded-md  w-40  text-md  text-white round"
-													onClick={() => Navigate("/Signup")}
-													type="button"
-												>
-													Signup
-												</button>
-											</span>
+											
 										</div>
 										{/* SOCIAL ICONS  */}
 										<li
@@ -115,6 +107,7 @@ const NavBarComponent = () => {
 				</div>
 			</nav>
 			{/* END OF NAVBAR COMPONENT */}
+			
 		</>
 	);
 };
