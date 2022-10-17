@@ -14,6 +14,7 @@ module.exports = {
 				Poppins: ["Poppins", " sans-serif"],
 				Arimo: ["Arimo", " sans-serif"],
 			},
+
 		},
 	},
 	plugins: [],
