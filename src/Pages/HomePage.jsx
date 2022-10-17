@@ -2,34 +2,10 @@ import React from 'react'
 import introImage from '.././Components/Images/shoppingOne.svg'
 import FirstContent from '../Components/Images/fFirstContetn.svg'
 import SecondContent from "../Components/Images/SecondConttent.svg";
+import {Post, MenProductSection} from  '../Items/Items.js'
 
  
 const HomePage = () => {
-	
-	// CARD INFROMATION
-	const posts = [
-		{
-			title: "Product",
-			img: "https://cdn2.mageplaza.com/media/general/ecommerce-product-photo.jpg",
-			content:
-				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
-		},
-		{
-			title: "Costumer Support",
-			img: "https://www.revechat.com/wp-content/uploads/2022/02/customer-support-2-1280x720.jpg",
-			content:
-				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
-		},
-		{
-			title: " Constutation",
-			img: "https://wecarecomputers.com/wp-content/uploads/2018/02/consultation.jpg",
-			content:
-				"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
-		},
-	];
-
-
-
 	// RETIREMENT OF CONTENT
 	return (
 		<>
@@ -76,11 +52,10 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-
-			{/*====================== 3 CARD SECTION ========================  */}
+			J{/*====================== 3 CARD SECTION ========================  */}
 			<section id="Card_section">
 				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-10 lg:px-40 ml-20">
-					{posts.map((items, key) => (
+					{Post.map((items, key) => (
 						<div
 							className="w-full shadow-sm Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   lg:max-w-md  bg-white"
 							key={key}
@@ -100,11 +75,10 @@ const HomePage = () => {
 					))}
 				</div>
 			</section>
-
 			{/*====================== CONENT WITH IAMGE SECTION  ========================  */}
 			{/* FIRST ROW  */}
-			<section id="Content" className="bg-white">
-				<div className="grid gap-2  lg:grid-cols-2 mt-20">
+			<section id="Content" className="bg-NavbarBgColor ">
+				<div className="grid gap-2  lg:grid-cols-2 mt-20 text-white">
 					<div className="md:p-20 ">
 						<img className="w-full " src={FirstContent} alt="" />
 					</div>
@@ -123,9 +97,9 @@ const HomePage = () => {
 
 				{/* SECOND ROW  */}
 
-				<div className="grid gap-2 mt-40 md:mt-0 lg:grid-cols-2 ">
+				<div className="grid gap-2 mt-40 md:mt-0 lg:grid-cols-2 text-white ">
 					<div className="md:hidden  mt-20">
-					{/* IMAGE SHOWING IN PHONE AND TABLET MODE */}
+						{/* IMAGE SHOWING IN PHONE AND TABLET MODE */}
 						<img className=" w-full " src={SecondContent} alt="" />
 					</div>
 					<div className="lg:mt-40 lg:px-40">
@@ -145,9 +119,37 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* =============RECOMMENDATION SECTION=============  */}
 			
+			{/* =============RECOMMENDATION SECTION=============  */}
+			<section id="Recommendation" className=" mt-20">
+				<h1 className="text-center font-Poppins align-middle text-7xl">
+					Product for Men
+				</h1>
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20   px-10 lg:px-40 ml-20">
+					{MenProductSection.map((Product, name) => (
+						<div
+							className="w-full  bg-white Lg:shadow-lg mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer border-NavbarBgColor   "
+							key={name}
+						>
+							<img
+								className="object-cover w-full h-80  object-center"
+								src={Product.img}
+								alt="imag"
+							/>
+							<div className="p-4 flex   ">
+								<h4 className="text-2xl  mb-5 font-Poppins text-NavbarBgColor ">
+									{Product.Price}
+									<span className=" ml-20">  </span>
+								</h4>
+								<p className="mb-2 leading-normal text-xl ">
+									{Product.content}
+								</p>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+			{/* ======== FOOTER SECTION  ========*/}
 		</>
 	);
 }
