@@ -1,12 +1,21 @@
-import React from 'react'
-import introImage from '.././Components/Images/shoppingOne.svg'
-import FirstContent from '../Components/Images/fFirstContetn.svg'
+import React from "react";
+import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import introImage from ".././Components/Images/shoppingOne.svg";
+import FirstContent from "../Components/Images/fFirstContetn.svg";
+import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
-import {Post, MenProductSection} from  '../Items/Items.js'
+import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
 
- 
+
 const HomePage = () => {
-	// RETIREMENT OF CONTENT
+	// SOCIAL ICONS LINKS
+	const Github = "https://github.com/Clifftech123";
+	const Twitter = "https://twitter.com/Clifftech_Dev";
+	const Facebook = "https://web.facebook.com/opokuisaiah.clifford";
+	const Instagram = "https://www.instagram.com/opokuisaiahclifford/";
+
+	const Navigate = useNavigate();
 	return (
 		<>
 			{/* INTRO SECTION */}
@@ -75,7 +84,7 @@ const HomePage = () => {
 					))}
 				</div>
 			</section>
-			{/*====================== CONENT WITH IAMGE SECTION  ========================  */}
+			{/*====================== CONTENT WITH IMAGE SECTION  ========================  */}
 			{/* FIRST ROW  */}
 			<section id="Content" className="bg-NavbarBgColor ">
 				<div className="grid gap-2  lg:grid-cols-2 mt-20 text-white">
@@ -119,16 +128,15 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-			
-			{/* =============RECOMMENDATION SECTION=============  */}
-			<section id="Recommendation" className=" mt-20">
-				<h1 className="text-center font-Poppins align-middle text-7xl">
+			{/* ============= PRODUCT FOR  MEN =============  */}
+			<section id="Recommendation" className=" mt-20  ">
+				<h1 className="text-center  track-wilder text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
 					Product for Men
 				</h1>
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20   px-10 lg:px-40 ml-20">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20    px-10 lg:px-40 ml-20">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full  bg-white Lg:shadow-lg mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer border-NavbarBgColor   "
+							className="w-full   md:bg-white  bg-NavbarBgColor md:shadow-sm mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer border-NavbarBgColor   "
 							key={name}
 						>
 							<img
@@ -136,14 +144,124 @@ const HomePage = () => {
 								src={Product.img}
 								alt="imag"
 							/>
-							<div className="p-4 flex   ">
-								<h4 className="text-2xl  mb-5 font-Poppins text-NavbarBgColor ">
+							<div className="p-4   ">
+								<h4 className="text-2xl  font-bold mb-5 font-Poppins text-NavbarBgColor ">
 									{Product.Price}
-									<span className=" ml-20">  </span>
+									<span className=" ml-20"> </span>
 								</h4>
-								<p className="mb-2 leading-normal text-xl ">
+								<p className="mb-2 leading-normal  md:text-black text-white  text-lg ">
 									{Product.content}
 								</p>
+
+								<button
+									type="button"
+									className=" text-bntColor font-bold mt-5 text-xl font-Poppins"
+									onClick={() => Navigate("/login")}
+								>
+									See all
+								</button>
+								{/* SOCIAL ICONS */}
+								<span className="flex justify-between mt-5  font-bold  text-white   md:text-blue-600  text-xl ">
+									<li title="Github" className="   block  ">
+										<a href={Github} target={"_blank"} rel="noreferrer">
+											<FaGithub />
+										</a>
+									</li>
+									<li title="tWitter" className=" block   ">
+										<a href={Twitter} target={"_blank"} rel="noreferrer">
+											<FaTwitter />
+										</a>
+									</li>
+									<li title="Facebook" className=" block  ">
+										<a href={Facebook} target={"_blank"} rel="noreferrer">
+											<FaFacebook />
+										</a>
+									</li>
+									<li title="Instagram" className=" block ">
+										<a href={Instagram} target={"_blank"} rel="noreferrer">
+											<FaInstagram />
+										</a>
+									</li>
+								</span>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+			{/* MORE RECOMMENDATION  FOR SECTION  */}
+			<section className="bg-white  mb ">
+				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip text-white">
+					<div className="md:p-40 ">
+						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
+					</div>
+					<div className="md::mt-40 md:px-40 ">
+						<div className="md:py-60 px-10">
+							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+								An e-commerce website is one that allows people to buy and sell
+							</h1>
+							<p className="text-2xl  font-serif text-black">
+								An e-commerce website is one that allows people to buy and sell
+								physical goods, services, and digital products over the internet
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/*============ PRODUCT FOR WOMEN ===================== */}
+			<section id="Recommendation" className=" mt-40  ">
+				<h1 className="text-center  mt:60  text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
+					Product for Women
+				</h1>
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20   px-10 lg:px-40 ml-20">
+					{WomenProduct.map((Product, name) => (
+						<div
+							className="w-full Lg:shadow-lg mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer   md:bg-white    bg-NavbarBgColor border-NavbarBgColor   "
+							key={name}
+						>
+							<img
+								className="object-cover w-full h-80  object-center"
+								src={Product.img}
+								alt="imag"
+							/>
+							<div className="p-4   ">
+								<h4 className="text-2xl  font-bold mb-5 font-Poppins   text-NavbarBgColor ">
+									{Product.Price}
+									<span className=" ml-20"> </span>
+								</h4>
+								<p className="mb-2 leading-normal text-lg  md:text-black text-white">
+									{Product.content}
+								</p>
+
+								<button
+									type="button"
+									className=" text-bntColor font-bold mt-5 text-xl font-Poppins"
+									onClick={() => Navigate("/login")}
+								>
+									See all
+								</button>
+								{/* SOCIAL ICONS */}
+								<span className="flex justify-between mt-5  font-bold   text-white   md:text-blue-600  text-xl ">
+									<li title="Github" className="   block  ">
+										<a href={Github} target={"_blank"} rel="noreferrer">
+											<FaGithub />
+										</a>
+									</li>
+									<li title="tWitter" className=" block   ">
+										<a href={Twitter} target={"_blank"} rel="noreferrer">
+											<FaTwitter />
+										</a>
+									</li>
+									<li title="Facebook" className=" block  ">
+										<a href={Facebook} target={"_blank"} rel="noreferrer">
+											<FaFacebook />
+										</a>
+									</li>
+									<li title="Instagram" className=" block ">
+										<a href={Instagram} target={"_blank"} rel="noreferrer">
+											<FaInstagram />
+										</a>
+									</li>
+								</span>
 							</div>
 						</div>
 					))}
@@ -152,7 +270,6 @@ const HomePage = () => {
 			{/* ======== FOOTER SECTION  ========*/}
 		</>
 	);
-}
+};
 
-export default HomePage
-
+export default HomePage;
