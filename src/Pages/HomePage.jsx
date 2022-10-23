@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import introImage from ".././Components/Images/shoppingOne.svg";
+import Footer from "../Components/Footer";
 import FirstContent from "../Components/Images/fFirstContetn.svg";
 import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
@@ -66,7 +67,7 @@ const HomePage = () => {
 				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-10 lg:px-40 ml-20">
 					{Post.map((items, key) => (
 						<div
-							className="w-full shadow-sm Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   lg:max-w-md  bg-white"
+							className="w-full  Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   shadow-lg  lg:max-w-md  bg-white"
 							key={key}
 						>
 							<img
@@ -128,15 +129,20 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-			{/* ============= PRODUCT FOR  MEN =============  */}
-			<section id="Recommendation" className=" mt-20  ">
+			{/* ============= 
+			PRODUCT FOR  MEN 
+			=============  */}
+			<section
+				id="Recommendation"
+				className=" mt-20 md:mr-0  md:ml-0 mr-10 ml-10  md:px-40 "
+			>
 				<h1 className="text-center  track-wilder text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
 					Product for Men
 				</h1>
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20    px-10 lg:px-40 ml-20">
+				<div className="grid gap-2 md:gap-10 lg:grid-cols-4 mt-20  ">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full   md:bg-white  bg-NavbarBgColor md:shadow-sm mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer border-NavbarBgColor   "
+							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center    lg:max-w-md   borer border-NavbarBgColor   "
 							key={name}
 						>
 							<img
@@ -149,7 +155,7 @@ const HomePage = () => {
 									{Product.Price}
 									<span className=" ml-20"> </span>
 								</h4>
-								<p className="mb-2 leading-normal  md:text-black text-white  text-lg ">
+								<p className="mb-2 leading-normal   text-white  text-lg ">
 									{Product.content}
 								</p>
 
@@ -161,7 +167,7 @@ const HomePage = () => {
 									See all
 								</button>
 								{/* SOCIAL ICONS */}
-								<span className="flex justify-between mt-5  font-bold  text-white   md:text-blue-600  text-xl ">
+								<span className="flex justify-between mt-5  font-bold  text-white     text-xl ">
 									<li title="Github" className="   block  ">
 										<a href={Github} target={"_blank"} rel="noreferrer">
 											<FaGithub />
@@ -188,12 +194,97 @@ const HomePage = () => {
 					))}
 				</div>
 			</section>
-			{/* MORE RECOMMENDATION  FOR SECTION  */}
-			<section className="bg-white  mb ">
-				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip text-white">
+			{/*  ======= 
+			MORE RECOMMENDATION  FOR  MEN SECTION  
+			=========  */}
+			<section className="bg-white shadow-xl   ">
+				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip px:20 text-white">
 					<div className="md:p-40 ">
 						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
+					<div className="md:mt-40  mb:40  md:px-40 ">
+						<div className="md:py-60  p-40px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+								An e-commerce website is one that allows people to buy and sell
+							</h1>
+							<p className="text-2xl  font-serif text-black">
+								An e-commerce website is one that allows people to buy and sell
+								physical goods, services, and digital products over the internet
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/*============ 
+			PRODUCT FOR WOMEN 
+			===================== */}
+			<section
+				id="Recommendation"
+				className=" mt-40   md:mr-0  md:ml-0 mr-10 ml-10  md:px-40    "
+			>
+				<h1 className="text-center   mt:60  text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
+					Product for Women
+				</h1>
+				<div className="grid gap-2 md:gap-10 lg:grid-cols-4 mt-20 ">
+					{WomenProduct.map((Product, name) => (
+						<div
+							className="w-full Lg:shadow-lg mt-10  rounded-lg shadow-2xl    align-middle justify-center   lg:max-w-md   bg-NavbarBgColor border-NavbarBgColor   "
+							key={name}
+						>
+							<img
+								className="object-cover w-full h-80  object-center  "
+								src={Product.img}
+								alt="imag"
+							/>
+							<div className="p-4   ">
+								<h4 className="text-2xl  font-bold mb-5 font-Poppins   text-NavbarBgColor ">
+									{Product.Price}
+									<span className=" ml-20"> </span>
+								</h4>
+								<p className="mb-2 leading-normal text-lg   text-white">
+									{Product.content}
+								</p>
+
+								<button
+									type="button"
+									className=" text-bntColor font-bold mt-5 text-xl font-Poppins"
+									onClick={() => Navigate("/login")}
+								>
+									See all
+								</button>
+								{/* SOCIAL ICONS */}
+								<span className="flex justify-between mt-5  font-bold   text-white    text-xl ">
+									<li title="Github" className="   block  ">
+										<a href={Github} target={"_blank"} rel="noreferrer">
+											<FaGithub />
+										</a>
+									</li>
+									<li title="tWitter" className=" block   ">
+										<a href={Twitter} target={"_blank"} rel="noreferrer">
+											<FaTwitter />
+										</a>
+									</li>
+									<li title="Facebook" className=" block  ">
+										<a href={Facebook} target={"_blank"} rel="noreferrer">
+											<FaFacebook />
+										</a>
+									</li>
+									<li title="Instagram" className=" block ">
+										<a href={Instagram} target={"_blank"} rel="noreferrer">
+											<FaInstagram />
+										</a>
+									</li>
+								</span>
+							</div>
+						</div>
+					))}
+				</div>
+			</section>
+			{/*  ======= 
+			MORE RECOMMENDATION  FOR  WOMEN  SECTION  
+			=========  */}
+			<section className="bg-white  mt-20 ">
+				<div className="grid gap-2  lg:grid-cols-2  h-screen overflow-clip text-white">
 					<div className="md::mt-40 md:px-40 ">
 						<div className="md:py-60 px-10">
 							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
@@ -205,69 +296,18 @@ const HomePage = () => {
 							</p>
 						</div>
 					</div>
-				</div>
-			</section>
-			{/*============ PRODUCT FOR WOMEN ===================== */}
-			<section id="Recommendation" className=" mt-40  ">
-				<h1 className="text-center  mt:60  text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
-					Product for Women
-				</h1>
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-4 mt-20   px-10 lg:px-40 ml-20">
-					{WomenProduct.map((Product, name) => (
-						<div
-							className="w-full Lg:shadow-lg mt-10  rounded-md shadow-xl   align-middle justify-center   lg:max-w-md   borer   md:bg-white    bg-NavbarBgColor border-NavbarBgColor   "
-							key={name}
-						>
-							<img
-								className="object-cover w-full h-80  object-center"
-								src={Product.img}
-								alt="imag"
-							/>
-							<div className="p-4   ">
-								<h4 className="text-2xl  font-bold mb-5 font-Poppins   text-NavbarBgColor ">
-									{Product.Price}
-									<span className=" ml-20"> </span>
-								</h4>
-								<p className="mb-2 leading-normal text-lg  md:text-black text-white">
-									{Product.content}
-								</p>
 
-								<button
-									type="button"
-									className=" text-bntColor font-bold mt-5 text-xl font-Poppins"
-									onClick={() => Navigate("/login")}
-								>
-									See all
-								</button>
-								{/* SOCIAL ICONS */}
-								<span className="flex justify-between mt-5  font-bold   text-white   md:text-blue-600  text-xl ">
-									<li title="Github" className="   block  ">
-										<a href={Github} target={"_blank"} rel="noreferrer">
-											<FaGithub />
-										</a>
-									</li>
-									<li title="tWitter" className=" block   ">
-										<a href={Twitter} target={"_blank"} rel="noreferrer">
-											<FaTwitter />
-										</a>
-									</li>
-									<li title="Facebook" className=" block  ">
-										<a href={Facebook} target={"_blank"} rel="noreferrer">
-											<FaFacebook />
-										</a>
-									</li>
-									<li title="Instagram" className=" block ">
-										<a href={Instagram} target={"_blank"} rel="noreferrer">
-											<FaInstagram />
-										</a>
-									</li>
-								</span>
-							</div>
-						</div>
-					))}
+					<div className="md:p-40 ">
+						{/* <note:!> I WILL ADD </note:!> */}
+						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
+					</div>
 				</div>
 			</section>
-			{/* ======== FOOTER SECTION  ========*/}
+
+			{/*-------- FOOTER SECTION RENDER WITH IT FROM THE FOOTER COMPONENT -----*/}
+			<section id="Footer_section" className=" bg-NavbarBgColor">
+				<Footer />
+			</section>
 		</>
 	);
 };
