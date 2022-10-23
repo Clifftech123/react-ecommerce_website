@@ -65,6 +65,14 @@ const Signup = () => {
 							<NavLink to="/login"> Sign in </NavLink>
 						</span>
 					</p>
+					<div className="border border-NavbarBgColor w-90 mx-10 mt-5"> </div>
+					{/* RETURNING HOME  */}
+					<p className="text-lg font-Poppins mb-5 text-center mt-1">
+						Go back
+						<span className="text-indigo-600">
+							<NavLink to="/"> Home </NavLink>
+						</span>
+					</p>
 				</div>
 			</div>
 		</>
