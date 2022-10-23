@@ -36,10 +36,10 @@ const Logins = () => {
 									autoComplete="current-password"
 									required
 									className=" text-lg font-Poppins  mt-5  relative block
-                  w-full px-10 py-4 border border-gray-300
-                  placeholder-gray-500 text-gray-900  rounded-lg
-                  focus:outline-none focus:ring-indigo-500
-                  focus:border-indigo-500 focus:z-1 sm:text-sm"
+                                w-full px-10 py-4 border border-gray-300
+                               placeholder-gray-500 text-gray-900  rounded-lg
+                               focus:outline-none focus:ring-indigo-500
+                               focus:border-indigo-500 focus:z-1 sm:text-sm"
 									placeholder="Password"
 								/>
 							</div>
@@ -49,10 +49,10 @@ const Logins = () => {
 							<button
 								type="submit"
 								className="group relative w-full flex justify-center
-                py-2 font-Poppins text-lg px-4 border border-transparent  font-medium
-                rounded-md text-white  bg-NavbarBgColor hover:bg-indigo-700
-                focus:outline-none focus:ring-2 focus:ring-offset-2
-                focus:ring-indigo-500"
+                                 py-2 font-Poppins text-lg px-4 border border-transparent  font-medium
+                                  rounded-md text-white  bg-NavbarBgColor hover:bg-indigo-700
+                                 focus:outline-none focus:ring-2 focus:ring-offset-2
+                               focus:ring-indigo-500"
 							>
 								Sign in
 							</button>
@@ -63,6 +63,15 @@ const Logins = () => {
 						I don't have account ?{" "}
 						<span className="text-indigo-600">
 							<NavLink to="/signup"> Sing Up </NavLink>
+						</span>
+					</p>
+					<div className="border border-NavbarBgColor w-90 mx-10 "> </div>
+					{/* RETURNING HOME  */}
+					<p className="text-lg font-Poppins mb-5 text-center ">
+						Go back
+						<span className="text-indigo-600">
+							{" "}
+							<NavLink to="/"> Home </NavLink>
 						</span>
 					</p>
 				</div>
