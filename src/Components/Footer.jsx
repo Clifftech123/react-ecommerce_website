@@ -1,90 +1,44 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+	// SOCIAL ICONS LINKS
+	const Github = "https://github.com/Clifftech123";
+	const Twitter = "https://twitter.com/Clifftech_Dev";
+	const Facebook = "https://web.facebook.com/opokuisaiah.clifford";
+	const Instagram = "https://www.instagram.com/opokuisaiahclifford/";
 	return (
 		<>
-			<div className=" bg-NavbarBgColor  mt-20">
-				<div className="max-w-6xl m-auto  text-white flex flex-wrap justify-center">
-					{/* FIRST  ROW */}
+			<div className="  mt-20">
+				<div className="max-w-6xl m-auto  bg-NavbarBgColor text-bntColor flex flex-wrap justify-center">
+					{/* FIRST  ROW HOME */}
 					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
+						<div className=" uppercase  text-gray-400 text-lg  font-Poppins  font-medium">
 							Home
 						</div>
 						<a className="my-3 block" href="/#">
-							Services <span className="text-white text-xs p-1"></span>
+							Dashboard <span className=" text-bntColor text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							Products <span className="text-white text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							About Us <span className="text-white text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Pricing <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Partners <span className="text-teal-600 text-xs p-1">New</span>
+							Products <span className="text-bntColor  text-xs p-1"></span>
 						</a>
 					</div>
-					{/* SECOND ROW  */}
+					{/* SECOND ROW USER  */}
 					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
+						<div className=" uppercase  text-gray-400 text-lg  font-Poppins font-medium">
 							User
 						</div>
 						<a className="my-3 block" href="/#">
 							Sign in <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							New Account <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Demo <span className="text-teal-600 text-xs p-1">New</span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Career{" "}
-							<span className="text-teal-600 text-xs p-1">We're hiring</span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Surveys <span className="text-teal-600 text-xs p-1">New</span>
-						</a>
-					</div>
-					{/* THIRD ROW  */}
-
-					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
-							Resources
-						</div>
-						<a className="my-3 block" href="/#">
-							Documentation <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Tutorials <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Support <span className="text-teal-600 text-xs p-1">New</span>
-						</a>
-					</div>
-					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
-							Product
-						</div>
-						<a className="my-3 block" href="/#">
-							Our Products <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Great Deals <span className="text-teal-600 text-xs p-1">New</span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Analytics <span className="text-teal-600 text-xs p-1"></span>
-						</a>
-						<a className="my-3 block" href="/#">
-							Mobile <span className="text-teal-600 text-xs p-1"></span>
+							Sing up <span className="text-teal-600 text-xs p-1"></span>
 						</a>
 					</div>
 
+					{/* THIRD ROW SUPPORT */}
 					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
+						<div className=" uppercase  text-gray-400 text-lg  font-Poppins font-medium">
 							Support
 						</div>
 						<a className="my-3 block" href="/#">
@@ -93,20 +47,18 @@ const Footer = () => {
 						<a className="my-3 block" href="/#">
 							Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
 						</a>
-						<a className="my-3 block" href="/#">
-							Conditions <span className="text-teal-600 text-xs p-1"></span>
-						</a>
 					</div>
+					{/* FOURTH ROW CONTACT */}
 					<div className="p-5 w-48 ">
-						<div className="text-xs uppercase text-gray-500 font-medium">
+						<div className="text-xs uppercase  text-gray-400 text-lg  font-Poppins font-medium">
 							Contact us
 						</div>
 						<a className="my-3 block" href="/#">
-							XXX XXXX, Floor 4 San Francisco, CA{" "}
+							007CBD, Floor 4 San Kumasi, Ghana
 							<span className="text-teal-600 text-xs p-1"></span>
 						</a>
 						<a className="my-3 block" href="/#">
-							contact@company.com{" "}
+							Clifftech@gmail..com{" "}
 							<span className="text-teal-600 text-xs p-1"></span>
 						</a>
 					</div>
@@ -119,39 +71,41 @@ const Footer = () => {
 					className="flex    pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
                      md:flex-row max-w-6xl"
 				>
-					<div className="mt-2 text-white">
-						© Copyright 2020. All Rights Reserved.
+					<div className="mt-2 text-white text-lg">
+						© Copyright 2022. All Rights Reserved.
 					</div>
 					<div className="md:flex-1   md:space-x-10 space-x-4   md:flex-row-reverse mt-2 flex-row flex">
-					{/* LINKEDIN */}
-						<button className="w-6  md:mx-10 mx-1">
-							<span className=" text-white text-4xl   space-x-4 fill-current  hover:text-gray-400 cursor-pointer">
-								<FaLinkedin />
-							</span>
-						</button>
+						LINKEDIN
 						{/* FACEBOOK */}
-						<button className="w-6 mx-1 ">
+						<button className="w-6 mx-1  md:mx-10 " title="Facebook">
 							<span className=" text-white text-4xl fill-current  hover:text-gray-400 cursor-pointer">
-								<FaFacebook />
+								<a href={Facebook} target={"_blank"} rel="noreferrer">
+									<FaFacebook />
+								</a>
 							</span>
 						</button>
 						{/* TWITTER */}
-						<button className="w-6 mx-1">
+						<button className="w-6 mx-1" title="Twitter">
 							<span className=" text-white text-4xl fill-current  hover:text-gray-400 cursor-pointer">
-								<FaTwitter />
+								<a href={Twitter} target={"_blank"} rel="noreferrer">
+									<FaTwitter />
+								</a>
 							</span>
 						</button>
 						{/* INSTAGRAM */}
-						<button className="w-6 mx-1">
+						<button className="w-6 mx-1" title="Instagram">
 							<span className=" text-white text-4xl fill-current  hover:text-gray-400 cursor-pointer">
-								<FaInstagram />
+								<a href={Instagram} target={"_blank"} rel="noreferrer">
+									<FaInstagram />
+								</a>
 							</span>
 						</button>
 						{/* GITHUB */}
-
-						<button className="w-6 mx-1  space-x-4 ">
+						<button className="w-6 mx-1  space-x-4 " title="Github">
 							<span className=" text-white text-4xl fill-current  hover:text-gray-400 cursor-pointer">
-								<FaGithub />
+								<a href={Github} target={"_blank"} rel="noreferrer">
+									<FaGithub />
+								</a>
 							</span>
 						</button>
 					</div>
