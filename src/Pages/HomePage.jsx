@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import introImage from ".././Components/Images/shoppingOne.svg";
@@ -8,8 +8,11 @@ import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
 import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
 
-
 const HomePage = () => {
+
+//    SHOEING AND HIDDEN TEXT TOGGLE
+const [ showText , hiddeText ] = useState(false);
+
 	// SOCIAL ICONS LINKS
 	const Github = "https://github.com/Clifftech123";
 	const Twitter = "https://twitter.com/Clifftech_Dev";
@@ -63,8 +66,8 @@ const HomePage = () => {
 				</div>
 			</div>
 			J{/*====================== 3 CARD SECTION ========================  */}
-			<section id="Card_section">
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-10 lg:px-40 ml-20">
+			<section id="Card_section" className="">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-20 lg:px-40 ">
 					{Post.map((items, key) => (
 						<div
 							className="w-full  Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   shadow-lg  lg:max-w-md  bg-white"
@@ -101,6 +104,14 @@ const HomePage = () => {
 								An e-commerce website is one that allows people to buy and sell
 								physical goods, services, and digital products over the internet
 							</p>
+							<div className=" md:mt-5    md:text-start text-center">
+								<button
+									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
+									type="button"
+								>
+									See more
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -121,6 +132,28 @@ const HomePage = () => {
 								An e-commerce website is one that allows people to buy and sell
 								physical goods, services, and digital products over the internet
 							</p>
+							{/* SEE MORE BUTTON */}
+							<div className=" md:mt-5    md:text-start text-center">
+								<button
+									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
+									type="button"
+								>
+									See more
+								</button>
+							</div>
+
+							{/* HIDDEN TEXT  */}
+							<div>
+								<p className="text-2xl  mt-3 hidden font-serif">
+									An e-commerce website is one that allows people to buy and
+									sell physical goods, services, and digital products over the
+									internet An e-commerce website is one that allows people to
+									buy and sell physical goods, services, and digital products
+									over the internet An e-commerce website is one that allows
+									people to buy and sell physical goods, services, and digital
+									products over the internet
+								</p>
+							</div>
 						</div>
 					</div>
 					{/* IMAGE SHOWING IN LARGE  MODE  */}
@@ -142,7 +175,7 @@ const HomePage = () => {
 				<div className="grid gap-2 md:gap-10 lg:grid-cols-4 mt-20  ">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center    lg:max-w-md   borer border-NavbarBgColor   "
+							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md   borer border-NavbarBgColor   "
 							key={name}
 						>
 							<img
@@ -199,10 +232,10 @@ const HomePage = () => {
 			=========  */}
 			<section className="bg-white shadow-xl   ">
 				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip px:20 text-white">
-					<div className="md:p-40 ">
+					<div className="md:p-40  hidden md:block">
 						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
-					<div className="md:mt-40  mb:40  md:px-40 ">
+					<div className="md:mt-40  mb:40  md:px-40  hidden md:block">
 						<div className="md:py-60  p-40px-10">
 							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
 								An e-commerce website is one that allows people to buy and sell
@@ -212,6 +245,22 @@ const HomePage = () => {
 								physical goods, services, and digital products over the internet
 							</p>
 						</div>
+					</div>
+
+					{/* SHOWING IT ON SMALL DEVICES */}
+					<div className="mt-40  mb:10  px-10  md:hidden">
+						<div className="md:py-60  p-40px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+								An e-commerce website is one that allows people to buy and sell
+							</h1>
+							<p className="text-2xl  font-serif text-black">
+								An e-commerce website is one that allows people to buy and sell
+								physical goods, services, and digital products over the internet
+							</p>
+						</div>
+					</div>
+					<div className="md:p-40 md:hidden ">
+						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
 				</div>
 			</section>
@@ -286,7 +335,7 @@ const HomePage = () => {
 			<section className="bg-white  mt-20 ">
 				<div className="grid gap-2  lg:grid-cols-2  h-screen overflow-clip text-white">
 					<div className="md::mt-40 md:px-40 ">
-						<div className="md:py-60 px-10">
+						<div className="md:py-60 px-10 mt-20 mb-10">
 							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
 								An e-commerce website is one that allows people to buy and sell
 							</h1>
@@ -297,13 +346,12 @@ const HomePage = () => {
 						</div>
 					</div>
 
-					<div className="md:p-40 ">
+					<div className="md:p-60 p-10 ">
 						{/* <note:!> I WILL ADD </note:!> */}
 						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
 				</div>
 			</section>
-
 			{/*-------- FOOTER SECTION RENDER WITH IT FROM THE FOOTER COMPONENT -----*/}
 			<section id="Footer_section" className=" bg-NavbarBgColor">
 				<Footer />
