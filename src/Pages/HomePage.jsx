@@ -141,7 +141,7 @@ const [ showText , hiddeText ] = useState(false);
 							{/* SEE MORE BUTTON */}
 							<div className=" md:mt-5    md:text-start text-center">
 								<button
-									className="  md:mt-10  mb-10   text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
+									className="  md:mt-10  mb-10  mt-10  text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
 									type="button"
 								>
 									See more
@@ -292,7 +292,7 @@ const [ showText , hiddeText ] = useState(false);
 				<div className="grid gap-2  lg:grid-cols-2  overflow-clip text-white">
 					<div className=" md:px-40 ">
 						<div className=" md:py-96  py-0 px-10 mt-20 mb-10">
-							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins  text-NavbarBgColor mb-2 text-5xl md:mb-5 font-bold">
 							  Women's Dresses
 							</h1>
 							<p className="text-2xl  tracking-wider font-serif text-black">
