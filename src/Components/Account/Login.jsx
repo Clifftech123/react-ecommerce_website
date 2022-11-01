@@ -4,15 +4,15 @@ import { NavLink } from "react-router-dom";
 const Logins = () => {
 	return (
 		<>
-			<div className="h-full relative mx-20  flex  justify-center min-h-screen overflow-hidden  items-center  sm:px-6 lg:px-8">
+			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden  items-center  sm:px-6 lg:px-8">
 				<div className="max-w-md  py-10  px-15 shadow-lg border border-indigo-100  bg-white w-full space-y-5">
 					<div>
-						<h2 className=" text-center text-3xl mt-5 mb-0 font-Poppins text-gray-900">
+						<h2 className=" text-center text-2xl  md:text-3xl mt-5 mb-0 font-Poppins text-gray-900">
 							Sign in to your account
 						</h2>
 					</div>
 					{/* FORM */}
-					<form className="mt-2 p-10  space-y-6" action="#" method="POST">
+					<form className="mt-2 p-10  space-y-6" >
 						<div className="rounded-md  p-30 shadow-sm ">
 							{/* EMAIL */}
 							<input
