@@ -4,80 +4,76 @@ export const Post = [
 		title: "Product",
 		img: "https://cdn2.mageplaza.com/media/general/ecommerce-product-photo.jpg",
 		content:
-			"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+			"We give you best and affordable product.With the little money,  you will get a quality product for us ",
 	},
 	{
 		title: "Costumer Support",
 		img: "https://www.revechat.com/wp-content/uploads/2022/02/customer-support-2-1280x720.jpg",
 		content:
-			"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+			"We have 24/7Costumer service  support for all our Costumers. We will assist you for you to get you choice of product ",
 	},
 	{
-		title: " Constutation",
+		title: " Consultation",
 		img: "https://wecarecomputers.com/wp-content/uploads/2018/02/consultation.jpg",
 		content:
-			"react tailwind css card with image It is a long established fact that a reader will be distracted by the readable content",
+			"Our Consultation team will helps you to have the fancy of which product suit your needs",
 	},
 ];
 
 // MEN'S PRODUCT SECTION INFORMATION
 export const MenProductSection = [
 	{
-		img: "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1665&q=80",
+		img: "https://m.media-amazon.com/images/I/917js2UrHsL._AC_UY550_.jpg",
 		Price: "$200",
-		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+		amountMoney: "Price: $20 ",
+		content: "Amazon Essentials Men's Seamless Run Tank Top",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1604695573706-53170668f6a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-		Price: "$300",
+		img: "https://m.media-amazon.com/images/I/71GmJ2QlJ+L._AC_UY550_.jpg",
+		amountMoney: "Price : $19 ",
 		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+			"Carhartt Men's Flame Resistant Force Loose Fit Midweight Full-Zip Sweatshirt",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
-		Price: "$500",
-		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+		img: "https://m.media-amazon.com/images/I/61euZKpotuL._AC_UX569_.jpg",
+		amountMoney: "Price : $30 ",
+		content: "Quiksilver Men's Cane Island Woven Top",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1588359348347-9bc6cbbb689e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-		Price: "$600",
-		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+		img: "https://m.media-amazon.com/images/I/711isVt+YXL._AC_UY550_.jpg",
+		amountMoney: "Price : $25 ",
+		content: " Aware Men's Stretch Moisture Wicking Active Jacket.",
 	},
 ];
 
 //  PRODUCT FOR WOMEN
 export const WomenProduct = [
 	{
-		img: "https://images.unsplash.com/photo-1551621955-fa07d4b1376b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-		Price: "$100",
+		img: "https://m.media-amazon.com/images/I/91TRjbRuGyL._AC_UY550_.jpg",
+		WomenPrice: "$Price: 100",
 		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+			" Essentials Women's Classic-Fit Long-Sleeve Lightweight Plaid Flannel Shirt",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1567290290527-b553f4d97960?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-		Price: "$300",
-		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+		img: "https://m.media-amazon.com/images/I/A1eWimfb1AL._AC_UY550_.jpg",
+		WomenPrice: "  Price : $27",
+		content: "Amazon Essentials Women's Long-Sleeve Woven Blouse",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1553404175-78ecf5776a16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=509&q=80",
-		Price: "$140",
+		img: "https://m.media-amazon.com/images/I/71GxnYMVt1L._AC_UY550_.jpg",
+		WomenPrice: " Price : $20",
 		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+			"KAYWIDE Women's Casual Flannel Wool Blend Plaid Shacket Jacket Coat Lapel Button Down.",
 	},
 
 	{
-		img: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-		Price: "$500",
-		content:
-			"Get a fruit machine and a few boxes of pork scratchings in and you’ve basically completely replicated your local pub. Sticky bar-top and ancient, dubiously-stained carpet not included.",
+		img: "https://m.media-amazon.com/images/I/817iTsW0I9L._AC_UY550_.jpg",
+		WomenPrice: " Price : $100",
+		content: "Amazon Essentials Women's Brushed Tech Stretch Full-Zip Hoodie.",
 	},
 ];
