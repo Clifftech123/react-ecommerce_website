@@ -107,14 +107,14 @@ const [ showText , hiddeText ] = useState(false);
 								connection and some money. Voila! You’re getting your product
 								delivered a few days later — often free of charge.
 							</p>
-							<div className=" md:mt-5  mt-10  md:text-start text-center">
+							{/* <div className=" md:mt-5  mt-10  md:text-start text-center">
 								<button
 									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
 									type="button"
 								>
 									See more
 								</button>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -139,14 +139,14 @@ const [ showText , hiddeText ] = useState(false);
 								complete control over their business.
 							</p>
 							{/* SEE MORE BUTTON */}
-							<div className=" md:mt-5    md:text-start text-center">
+							{/* <div className=" md:mt-5    md:text-start text-center">
 								<button
 									className="  md:mt-10  mb-10  mt-10  text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
 									type="button"
 								>
 									See more
 								</button>
-							</div>
+							</div> */}
 
 							{/* HIDDEN TEXT  */}
 							<div>
