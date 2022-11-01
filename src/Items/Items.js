@@ -52,10 +52,10 @@ export const MenProductSection = [
 //  PRODUCT FOR WOMEN
 export const WomenProduct = [
 	{
-		img: "https://m.media-amazon.com/images/I/91TRjbRuGyL._AC_UY550_.jpg",
+		img: "https://m.media-amazon.com/images/I/71xbq1jiNHS._AC_UY550_.jpg",
 		WomenPrice: "$Price: 100",
 		content:
-			" Essentials Women's Classic-Fit Long-Sleeve Lightweight Plaid Flannel Shirt",
+			" PRETTYGARDEN Long Sleeve Maxi Dress for Women - V Neck Casual Button Down Boho Floral Print Fall Long Dresses",
 	},
 
 	{
