@@ -66,7 +66,6 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 				</div>
 			</div>
-			J
 			{/*====================== 3 CARD SECTION  UNDER THR NAVBAR SECTION========================  */}
 			<section id="Card_section" className="">
 				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-5 lg:px-40 ">
@@ -98,17 +97,17 @@ const [ showText , hiddeText ] = useState(false);
 						<img className="w-full " src={FirstContent} alt="" />
 					</div>
 					<div className="md::mt-40 md:px-40 ">
-						<div className="md:py-60 px-10">
-							<h1 className=" font-Poppins  text-white  text-4xl md:mb-5 font-bold">
+						<div className="md:py-60 px-10 py-10">
+							<h1 className=" font-Poppins  text-white text-3xl  md:text-4xl md:mb-5 font-bold">
 								Online selling and buy
 							</h1>
-							<p className="text-2xl tracking-wide ">
+							<p className="md:text-2xl  text-lg tracking-wide ">
 								Online shopping is convenient. It couldn’t be any more
 								comfortable. All you need is a working computer, an internet
 								connection and some money. Voila! You’re getting your product
 								delivered a few days later — often free of charge.
 							</p>
-							<div className=" md:mt-5    md:text-start text-center">
+							<div className=" md:mt-5  mt-10  md:text-start text-center">
 								<button
 									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
 									type="button"
@@ -122,17 +121,17 @@ const [ showText , hiddeText ] = useState(false);
 
 				{/* SECOND ROW  */}
 
-				<div className="grid gap-2 mt-40 md:mt-0 lg:grid-cols-2 text-white ">
-					<div className="md:hidden  mt-20">
+				<div className="grid gap-2 mt-10 md:mt-0 lg:grid-cols-2 text-white ">
+					<div className="md:hidden  mt-10">
 						{/* IMAGE SHOWING IN PHONE AND TABLET MODE */}
 						<img className=" w-full " src={SecondContent} alt="" />
 					</div>
 					<div className="lg:mt-40 lg:px-40">
 						<div className=" px-10">
-							<h1 className=" font-Poppins text-white text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins m text-white text-3xl  md:text-4xl md:mb-5 font-bold">
 								Managing Your Online Store
 							</h1>
-							<p className="text-2xl tracking-wide ">
+							<p className="md:text-2xl  text-lg tracking-wide ">
 								Obviously, there are many advantages of selling online, and the
 								ability to control every facet of your online business is
 								crucial to success in the long term. Multiorders simplifies this
@@ -142,7 +141,7 @@ const [ showText , hiddeText ] = useState(false);
 							{/* SEE MORE BUTTON */}
 							<div className=" md:mt-5    md:text-start text-center">
 								<button
-									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
+									className="  md:mt-10  mb-10   text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
 									type="button"
 								>
 									See more
@@ -169,19 +168,24 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 				</div>
 			</section>
+
 			{/*  ======= 
-			MORE RECOMMENDATION  HADING CONTENT FOR  MEN SECTION =========  */}
-			<section className="bg-white shadow-xl   ">
-				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip px:20 text-white">
+			MORE RECOMMENDATION  HADING CONTENT FOR  MEN SECTION
+			TELLING MORE ABOUT CLOTHING AND PRODUCT WE OFFER  
+			FOR MEN WITH AND IMAGE
+			
+			 =========  */}
+			<section className=" bg-white  ">
+				<div className="grid gap-2  lg:grid-cols-2   overflow-clip px:20 ">
 					<div className="md:p-40  hidden md:block">
 						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
 					<div className="md:mt-40  mb:40  md:px-40  hidden md:block">
 						<div className="md:py-60  p-40px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins text-NavbarBgColor md:text-7xl  text-2xl md:mb-5 font-bold">
 								Quality Product for men
 							</h1>
-							<p className="text-2xl   tracking-wide text-black">
+							<p className="text-lg  tracking-wide md:text-3xl font-serif  text-black">
 								If you are specifically hunting for designer pieces, then you
 								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
 								Pernia Qureshi, it is a one-stop destination for everything
@@ -194,7 +198,7 @@ const [ showText , hiddeText ] = useState(false);
 
 					{/* SHOWING IT ON SMALL DEVICES */}
 					<div className="mt-40  mb:10  px-10  md:hidden">
-						<div className="md:py-60  p-40px-10">
+						<div className="md:py-60 mb-20 p-40px-10">
 							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl mb-5 font-bold">
 								Quality Product for men
 							</h1>
@@ -208,17 +212,22 @@ const [ showText , hiddeText ] = useState(false);
 							</p>
 						</div>
 					</div>
-					<div className="md:p-40 md:hidden  h-full">
-						<img className="w-full  h-full  " src={MenImagePng} alt="" />
+					<div className="md:p-40 md:hidden hidden  ">
+						<img className="w-full   " src={MenImagePng} alt="" />
 					</div>
 				</div>
 			</section>
-			{/* ============= CLOTHING FOR  MEN  CONTENT   SECTION=============  */}
+			{/* ============= 
+			CONTENT FOR THE MEN .SAMPLE  FOR SOME WE HAVE AND YOU CAN 
+			CHECK FOR MORE IN SEE MORE BUTTON
+			CLOTHING FOR  MEN  CONTENT   SECTION
+			
+			=============  */}
 			<section
 				id="Recommendation"
-				className=" mt-20 md:mr-0  md:ml-0 mr-10 ml-10 mx-5 md:px-40 "
+				className="  md:mr-0  md:ml-0 mr-10 ml-10 mx-5 md:px-40 "
 			>
-				<div className="grid h-200 gap-2 md:gap-10 lg:grid-cols-4 mt-20  ">
+				<div className="grid h-200 gap-2 md:gap-10 lg:grid-cols-4   ">
 					{MenProductSection.map((Product, name) => (
 						<div
 							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md   borer border-NavbarBgColor relative overflow-hidden  "
@@ -277,37 +286,45 @@ const [ showText , hiddeText ] = useState(false);
 			</section>
 			{/*  ======= 
 			MORE RECOMMENDATION  FOR  WOMEN HEADING CONTENT   SECTION  
+			CONTENT WITH IMAGE DISPLAY WOMEN  CLOTHING AND WHY YOU SHOULD BUY FROM US 
 			=========  */}
-			<section className="bg-white  mt-20 ">
-				<div className="grid gap-2  lg:grid-cols-2  h-screen overflow-clip text-white">
-					<div className="md::mt-40 md:px-40 ">
-						<div className="md:py-60 px-10 mt-20 mb-10">
+			<section className="bg-white md:mt-20 ">
+				<div className="grid gap-2  lg:grid-cols-2  overflow-clip text-white">
+					<div className=" md:px-40 ">
+						<div className=" md:py-96  py-0 px-10 mt-20 mb-10">
 							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
-								An e-commerce website is one that allows people to buy and sell
+							  Women's Dresses
 							</h1>
-							<p className="text-2xl  font-serif text-black">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
+							<p className="text-2xl  tracking-wider font-serif text-black">
+								If you are specifically hunting for designer pieces, then you
+								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
+								Pernia Qureshi, it is a one-stop destination for everything
+								designer in your wardrobe. From Kunal Rawal's pleated kurtas to
+								Ashish N Soni's tailored Nehru jackets, you will find everything
+								here
 							</p>
 						</div>
 					</div>
 
-					<div className="md:p-60 p-10 ">
+					<div className="md:p-60  ">
 						{/* <note:!> I WILL ADD </note:!> */}
 						<img
-							className="w-full  overflow-clip "
+							className="w-full  hidden md:block overflow-clip "
 							src={RecommendationImageFromWomen}
 							alt=""
 						/>
 					</div>
 				</div>
 			</section>
-			{/*============ CLOTHING FOR WOMEN  CONTENT SECTION ===================== */}
+			{/*============ CLOTHING FOR WOMEN  CONTENT SECTION 
+			CONTENT FOR WOMEN WITH SAMPLE CLOTHING AND PRICE AND YOU CHECK FOR MORE AND SEE
+			MORE BUTTON 
+			===================== */}
 			<section
 				id="Recommendation"
-				className=" mt-40   md:mr-0  md:ml-0 mr-10 ml-10  md:px-40    "
+				className="   md:mr-0  md:ml-0 mr-10 ml-10  md:px-40    "
 			>
-				<div className="  h-200 grid gap-2 md:gap-10 lg:grid-cols-4 mt-20 ">
+				<div className="  h-200 grid gap-2 md:gap-10 lg:grid-cols-4 mt-10 ">
 					{WomenProduct.map((Product, name) => (
 						<div
 							className="w-full Lg:shadow-lg mt-10  rounded-lg shadow-2xl    align-middle justify-center   lg:max-w-md   bg-NavbarBgColor border-NavbarBgColor relative overflow-hidden   "
@@ -362,7 +379,9 @@ const [ showText , hiddeText ] = useState(false);
 					))}
 				</div>
 			</section>
-			{/*-------- FOOTER SECTION RENDER WITH IT FROM THE FOOTER COMPONENT -----*/}
+			{/*-------- FOOTER SECTION RENDER WITH IT FROM THE FOOTER COMPONENT 
+			
+			-----*/}
 			<section id="Footer_section" className=" bg-NavbarBgColor">
 				<Footer />
 			</section>
