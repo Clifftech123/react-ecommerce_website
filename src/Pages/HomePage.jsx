@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import FirstContent from "../Components/Images/fFirstContetn.svg";
 import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
+import RecommendationImageFromWomen from '../Components/Images/ImageForWomen.png'
 import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
 
 const HomePage = () => {
@@ -65,12 +66,13 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 				</div>
 			</div>
-			J{/*====================== 3 CARD SECTION ========================  */}
+			J
+			{/*====================== 3 CARD SECTION  UNDER THR NAVBAR SECTION========================  */}
 			<section id="Card_section" className="">
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-20 lg:px-40 ">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-5 lg:px-40 ">
 					{Post.map((items, key) => (
 						<div
-							className="w-full  Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center   shadow-lg  lg:max-w-md  bg-white"
+							className="w-full Lg:shadow-lg mt-10  rounded-md hover:shadow-xl hover:bg-NavbarBgColor hover:text-white align-middle justify-center  shadow-lg  lg:max-w-md  bg-white"
 							key={key}
 						>
 							<img
@@ -88,7 +90,7 @@ const [ showText , hiddeText ] = useState(false);
 					))}
 				</div>
 			</section>
-			{/*====================== CONTENT WITH IMAGE SECTION  ========================  */}
+			{/*====================== CONTENT  SITE  DESCRIPTION WITH IMAGE SECTION  ========================  */}
 			{/* FIRST ROW  */}
 			<section id="Content" className="bg-NavbarBgColor ">
 				<div className="grid gap-2  lg:grid-cols-2 mt-20 text-white">
@@ -97,12 +99,14 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 					<div className="md::mt-40 md:px-40 ">
 						<div className="md:py-60 px-10">
-							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
-								An e-commerce website is one that allows people to buy and sell
+							<h1 className=" font-Poppins  text-white  text-4xl md:mb-5 font-bold">
+								Online selling and buy
 							</h1>
-							<p className="text-2xl  font-serif">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
+							<p className="text-2xl tracking-wide ">
+								Online shopping is convenient. It couldn’t be any more
+								comfortable. All you need is a working computer, an internet
+								connection and some money. Voila! You’re getting your product
+								delivered a few days later — often free of charge.
 							</p>
 							<div className=" md:mt-5    md:text-start text-center">
 								<button
@@ -125,12 +129,15 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 					<div className="lg:mt-40 lg:px-40">
 						<div className=" px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor text-4xl md:mb-5 font-bold">
-								An e-commerce website is one that allows people to buy and sell
+							<h1 className=" font-Poppins text-white text-4xl md:mb-5 font-bold">
+								Managing Your Online Store
 							</h1>
-							<p className="text-2xl  font-serif">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
+							<p className="text-2xl tracking-wide ">
+								Obviously, there are many advantages of selling online, and the
+								ability to control every facet of your online business is
+								crucial to success in the long term. Multiorders simplifies this
+								and allows the user to sell through multiple channels and have
+								complete control over their business.
 							</p>
 							{/* SEE MORE BUTTON */}
 							<div className=" md:mt-5    md:text-start text-center">
@@ -162,33 +169,74 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 				</div>
 			</section>
-			{/* ============= 
-			PRODUCT FOR  MEN 
-			=============  */}
+			{/*  ======= 
+			MORE RECOMMENDATION  HADING CONTENT FOR  MEN SECTION =========  */}
+			<section className="bg-white shadow-xl   ">
+				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip px:20 text-white">
+					<div className="md:p-40  hidden md:block">
+						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
+					</div>
+					<div className="md:mt-40  mb:40  md:px-40  hidden md:block">
+						<div className="md:py-60  p-40px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+								Quality Product for men
+							</h1>
+							<p className="text-2xl   tracking-wide text-black">
+								If you are specifically hunting for designer pieces, then you
+								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
+								Pernia Qureshi, it is a one-stop destination for everything
+								designer in your wardrobe. From Kunal Rawal's pleated kurtas to
+								Ashish N Soni's tailored Nehru jackets, you will find everything
+								here
+							</p>
+						</div>
+					</div>
+
+					{/* SHOWING IT ON SMALL DEVICES */}
+					<div className="mt-40  mb:10  px-10  md:hidden">
+						<div className="md:py-60  p-40px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl mb-5 font-bold">
+								Quality Product for men
+							</h1>
+							<p className="text-2xl  track-wider text-black">
+								If you are specifically hunting for designer pieces, then you
+								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
+								Pernia Qureshi, it is a one-stop destination for everything
+								designer in your wardrobe. From Kunal Rawal's pleated kurtas to
+								Ashish N Soni's tailored Nehru jackets, you will find everything
+								here
+							</p>
+						</div>
+					</div>
+					<div className="md:p-40 md:hidden  h-full">
+						<img className="w-full  h-full  " src={MenImagePng} alt="" />
+					</div>
+				</div>
+			</section>
+			{/* ============= CLOTHING FOR  MEN  CONTENT   SECTION=============  */}
 			<section
 				id="Recommendation"
-				className=" mt-20 md:mr-0  md:ml-0 mr-10 ml-10  md:px-40 "
+				className=" mt-20 md:mr-0  md:ml-0 mr-10 ml-10 mx-5 md:px-40 "
 			>
-				<h1 className="text-center  track-wilder text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
-					Product for Men
-				</h1>
-				<div className="grid gap-2 md:gap-10 lg:grid-cols-4 mt-20  ">
+				<div className="grid h-200 gap-2 md:gap-10 lg:grid-cols-4 mt-20  ">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md   borer border-NavbarBgColor   "
+							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md   borer border-NavbarBgColor relative overflow-hidden  "
 							key={name}
 						>
-							<img
-								className="object-cover w-full h-80  object-center"
-								src={Product.img}
-								alt="imag"
-							/>
+							<span className="">
+								<img
+									className="object-cover w-full h-80  object-center hover:scale-110 transition duration-300 ease-in-out bg-transparent"
+									src={Product.img}
+									alt="imag"
+								/>
+							</span>
 							<div className="p-4   ">
-								<h4 className="text-2xl  font-bold mb-5 font-Poppins text-NavbarBgColor ">
-									{Product.Price}
+								<h4 className="text-2xl  font-bold  font-Poppins text-gray-400  ">
+									{Product.amountMoney}
 									<span className=" ml-20"> </span>
 								</h4>
-								<p className="mb-2 leading-normal   text-white  text-lg ">
+								<p className=" leading-normal   text-white  text-lg ">
 									{Product.content}
 								</p>
 
@@ -200,7 +248,7 @@ const [ showText , hiddeText ] = useState(false);
 									See all
 								</button>
 								{/* SOCIAL ICONS */}
-								<span className="flex justify-between mt-5  font-bold  text-white     text-xl ">
+								<span className="flex justify-between mt-5  font-bold align-bottom  text-white     text-xl ">
 									<li title="Github" className="   block  ">
 										<a href={Github} target={"_blank"} rel="noreferrer">
 											<FaGithub />
@@ -228,16 +276,13 @@ const [ showText , hiddeText ] = useState(false);
 				</div>
 			</section>
 			{/*  ======= 
-			MORE RECOMMENDATION  FOR  MEN SECTION  
+			MORE RECOMMENDATION  FOR  WOMEN HEADING CONTENT   SECTION  
 			=========  */}
-			<section className="bg-white shadow-xl   ">
-				<div className="grid gap-2  lg:grid-cols-2 mt-20 h-screen overflow-clip px:20 text-white">
-					<div className="md:p-40  hidden md:block">
-						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
-					</div>
-					<div className="md:mt-40  mb:40  md:px-40  hidden md:block">
-						<div className="md:py-60  p-40px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
+			<section className="bg-white  mt-20 ">
+				<div className="grid gap-2  lg:grid-cols-2  h-screen overflow-clip text-white">
+					<div className="md::mt-40 md:px-40 ">
+						<div className="md:py-60 px-10 mt-20 mb-10">
+							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
 								An e-commerce website is one that allows people to buy and sell
 							</h1>
 							<p className="text-2xl  font-serif text-black">
@@ -247,47 +292,35 @@ const [ showText , hiddeText ] = useState(false);
 						</div>
 					</div>
 
-					{/* SHOWING IT ON SMALL DEVICES */}
-					<div className="mt-40  mb:10  px-10  md:hidden">
-						<div className="md:py-60  p-40px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl md:mb-5 font-bold">
-								An e-commerce website is one that allows people to buy and sell
-							</h1>
-							<p className="text-2xl  font-serif text-black">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
-							</p>
-						</div>
-					</div>
-					<div className="md:p-40 md:hidden ">
-						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
+					<div className="md:p-60 p-10 ">
+						{/* <note:!> I WILL ADD </note:!> */}
+						<img
+							className="w-full  overflow-clip "
+							src={RecommendationImageFromWomen}
+							alt=""
+						/>
 					</div>
 				</div>
 			</section>
-			{/*============ 
-			PRODUCT FOR WOMEN 
-			===================== */}
+			{/*============ CLOTHING FOR WOMEN  CONTENT SECTION ===================== */}
 			<section
 				id="Recommendation"
 				className=" mt-40   md:mr-0  md:ml-0 mr-10 ml-10  md:px-40    "
 			>
-				<h1 className="text-center   mt:60  text-5xl  font-Poppins align-middle md:text-7xl p-0 m-0">
-					Product for Women
-				</h1>
-				<div className="grid gap-2 md:gap-10 lg:grid-cols-4 mt-20 ">
+				<div className="  h-200 grid gap-2 md:gap-10 lg:grid-cols-4 mt-20 ">
 					{WomenProduct.map((Product, name) => (
 						<div
-							className="w-full Lg:shadow-lg mt-10  rounded-lg shadow-2xl    align-middle justify-center   lg:max-w-md   bg-NavbarBgColor border-NavbarBgColor   "
+							className="w-full Lg:shadow-lg mt-10  rounded-lg shadow-2xl    align-middle justify-center   lg:max-w-md   bg-NavbarBgColor border-NavbarBgColor relative overflow-hidden   "
 							key={name}
 						>
 							<img
-								className="object-cover w-full h-80  object-center  "
+								className="object-cover w-full h-80  object-center hover:scale-110 transition duration-300 ease-in-out bg-transparent  "
 								src={Product.img}
 								alt="imag"
 							/>
 							<div className="p-4   ">
-								<h4 className="text-2xl  font-bold mb-5 font-Poppins   text-NavbarBgColor ">
-									{Product.Price}
+								<h4 className="text-2xl  font-bold mb-5 font-Poppins  text-gray-400   ">
+									{Product.WomenPrice}
 									<span className=" ml-20"> </span>
 								</h4>
 								<p className="mb-2 leading-normal text-lg   text-white">
@@ -327,29 +360,6 @@ const [ showText , hiddeText ] = useState(false);
 							</div>
 						</div>
 					))}
-				</div>
-			</section>
-			{/*  ======= 
-			MORE RECOMMENDATION  FOR  WOMEN  SECTION  
-			=========  */}
-			<section className="bg-white  mt-20 ">
-				<div className="grid gap-2  lg:grid-cols-2  h-screen overflow-clip text-white">
-					<div className="md::mt-40 md:px-40 ">
-						<div className="md:py-60 px-10 mt-20 mb-10">
-							<h1 className=" font-Poppins  text-NavbarBgColor  text-4xl md:mb-5 font-bold">
-								An e-commerce website is one that allows people to buy and sell
-							</h1>
-							<p className="text-2xl  font-serif text-black">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
-							</p>
-						</div>
-					</div>
-
-					<div className="md:p-60 p-10 ">
-						{/* <note:!> I WILL ADD </note:!> */}
-						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
-					</div>
 				</div>
 			</section>
 			{/*-------- FOOTER SECTION RENDER WITH IT FROM THE FOOTER COMPONENT -----*/}
