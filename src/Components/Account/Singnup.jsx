@@ -5,9 +5,9 @@ const Signup = () => {
 	const Navigate = useNavigate();
 	return (
 		<>
-			<div className="relative mx-10 md:mx-0 flex flex-col justify-center min-h-screen overflow-hidden">
-				<div className=" w-full shadow-lg md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
-					<h1 className="text-4xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
+			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen     overflow-hidden">
+				<div className=" w-full  shadow-lg md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
+					<h1 className="md:text-4xl text-2xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
 						Sign UP
 					</h1>
 					{/* FORM */}
