@@ -98,7 +98,7 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 					<div className="md::mt-40 md:px-40 ">
 						<div className="md:py-60 px-10 py-10">
-							<h1 className=" font-Poppins  text-white text-3xl  md:text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins mb-5 text-white text-3xl  md:text-4xl md:mb-5 font-bold">
 								Online selling and buy
 							</h1>
 							<p className="md:text-2xl  text-lg tracking-wide ">
@@ -128,10 +128,10 @@ const [ showText , hiddeText ] = useState(false);
 					</div>
 					<div className="lg:mt-40 lg:px-40">
 						<div className=" px-10">
-							<h1 className=" font-Poppins m text-white text-3xl  md:text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins mb-5  text-white text-3xl  md:text-4xl md:mb-5 font-bold">
 								Managing Your Online Store
 							</h1>
-							<p className="md:text-2xl  text-lg tracking-wide ">
+							<p className="md:text-2xl  mb-10 text-lg tracking-wide ">
 								Obviously, there are many advantages of selling online, and the
 								ability to control every facet of your online business is
 								crucial to success in the long term. Multiorders simplifies this
