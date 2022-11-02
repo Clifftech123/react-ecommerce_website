@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../Firebase.js";
 
 const Signup = () => {
 	const Navigate = useNavigate();
+	  const [firstName, setFirstName] = useState("");
+		const [lastName, setLastName] = useState("");
+		const [email, setEmail] = useState("");
+		const [password, setPassword] = useState("");
+
+
+		// ON SUBMIT FUNCTION WE  WILL RUN ANYTIME WE HIT LOGIN BUTTON 
+		const onSubmit = async (e) => {
+			e.preventDefault();
+
+			await createUserWithEmailAndPassword(auth, email, password)
+				.then((userCredential) => {
+					// SIN
+					const user = userCredential.user;
+					alert(user);
+					Navigate("/login");
+					// ...
+				})
+				// TROWING AN ERROR  THE USER 
+				.catch((error) => {
+					const errorCode = error.code;
+					const errorMessage = error.message;
+					alert(errorCode, errorMessage);
+					// ..
+				});
+		};
+       
 	return (
 		<>
 			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen     overflow-hidden">
@@ -11,11 +40,15 @@ const Signup = () => {
 						Sign UP
 					</h1>
 					{/* FORM */}
-					<form className="mt-2 p-7">
+					<form onSubmit={onSubmit} className="mt-2 p-7">
 						<div className="mb-2 ">
 							{/* FIRST NAME */}
 							<input
+								value={firstName}
+								onChange={(e) => setFirstName(e.target.value)}
+								name="firstname"
 								type="text"
+								required
 								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
 								placeholder="First Name"
 							/>
@@ -24,6 +57,11 @@ const Signup = () => {
 							{/* LASTNAME */}
 							<input
 								type="text"
+								label="Last name"
+								value={lastName}
+								onChange={(e) => setLastName(e.target.value)}
+								required
+								name="lastname"
 								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
 								placeholder="Last Name"
 							/>
@@ -32,6 +70,10 @@ const Signup = () => {
 							{/* EMAIL */}
 							<input
 								type="email"
+								label="Email address"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+								required
 								className=" p-24 w-full px-10 py-4 mt-2 font-Poppins text-lg border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none  focus:ring focus:ring-opacity-40"
 								placeholder="Email"
 							/>
@@ -40,6 +82,9 @@ const Signup = () => {
 						<div className="mb-2">
 							<input
 								type="password"
+								label="Create password"
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
 								required
 								className="block w-full px-10 py-4   font-Poppins text-lg mt-2  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
 								placeholder="Password"
@@ -49,7 +94,6 @@ const Signup = () => {
 						<div className="mt-6">
 							<button
 								type="submit "
-								onClick={() => Navigate("/login")}
 								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white  bg-NavbarBgColor hover:bg-indigo-700
                              focus:outline-none focus:ring-2 focus:ring-offset-2
                              focus:ring-indigo-500 rounded-md "
