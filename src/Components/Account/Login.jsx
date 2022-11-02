@@ -1,7 +1,31 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-
+import React, { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../Firebase";
+import { NavLink, useNavigate } from "react-router-dom";
 const Logins = () => {
+
+	
+	   const Navigate = useNavigate();
+			const [email, setEmail] = useState("");
+			const [password, setPassword] = useState("");
+           
+			// ON LOGINS FUNCTION 
+			const onLogin = (e) => {
+				e.preventDefault();
+				signInWithEmailAndPassword(auth, email, password)
+					.then((userCredential) => {
+						// Signed in
+						const user = userCredential.user;
+						Navigate("/dashboard");
+						alert(user)
+						   
+					})
+					.catch((error) => {
+						const errorCode = error.code;
+						const errorMessage = error.message;
+						 alert (errorCode, errorMessage);
+					});
+			};
 	return (
 		<>
 			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden  items-center  sm:px-6 lg:px-8">
@@ -12,7 +36,7 @@ const Logins = () => {
 						</h2>
 					</div>
 					{/* FORM */}
-					<form className="mt-2 p-10  space-y-6" >
+					<form className="mt-2 p-10  space-y-6">
 						<div className="rounded-md  p-30 shadow-sm ">
 							{/* EMAIL */}
 							<input
@@ -26,6 +50,7 @@ const Logins = () => {
                               focus:outline-none focus:ring-indigo-500
                             focus:border-indigo-500 focus:z-10 sm:text-sm"
 								placeholder="Email address"
+								onChange={(e) => setEmail(e.target.value)}
 							/>
 							{/* PASSWORD */}
 							<div className="">
@@ -41,12 +66,14 @@ const Logins = () => {
                                focus:outline-none focus:ring-indigo-500
                                focus:border-indigo-500 focus:z-1 sm:text-sm"
 									placeholder="Password"
+									onChange={(e) => setPassword(e.target.value)}
 								/>
 							</div>
 						</div>
 						{/* LOGINS BUTTON  */}
 						<div>
 							<button
+								onClick={onLogin}
 								type="submit"
 								className="group relative w-full flex justify-center
                                  py-2 font-Poppins text-lg px-4 border border-transparent  font-medium
