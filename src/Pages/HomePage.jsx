@@ -8,11 +8,12 @@ import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
 import RecommendationImageFromWomen from '../Components/Images/ImageForWomen.png'
 import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
+import NavbarComponent from "../Components/NavbarComponent"
 
 const HomePage = () => {
 
 //    SHOEING AND HIDDEN TEXT TOGGLE
-const [ showText , hiddeText ] = useState(false);
+
 
 	// SOCIAL ICONS LINKS
 	const Github = "https://github.com/Clifftech123";
@@ -23,6 +24,11 @@ const [ showText , hiddeText ] = useState(false);
 	const Navigate = useNavigate();
 	return (
 		<>
+			{/* DISPLAY THE NAVBAR FROM THE NAVBAR COMPONENT */}
+			<div>
+				<NavbarComponent />
+			</div>
+
 			{/* INTRO SECTION */}
 			<div id="Introduction" className="Introduction text-center">
 				<div className="  bg-NavbarBgColor shadow  grid lg:grid-cols-2 2xl:grid-cols-5">
@@ -293,7 +299,7 @@ const [ showText , hiddeText ] = useState(false);
 					<div className=" md:px-40 ">
 						<div className=" md:py-96  py-0 px-10 mt-20 mb-10">
 							<h1 className=" font-Poppins  text-NavbarBgColor mb-2 text-5xl md:mb-5 font-bold">
-							  Women's Dresses
+								Women's Dresses
 							</h1>
 							<p className="text-2xl  tracking-wider font-serif text-black">
 								If you are specifically hunting for designer pieces, then you
