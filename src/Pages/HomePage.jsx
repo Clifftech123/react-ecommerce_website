@@ -8,7 +8,7 @@ import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
 import RecommendationImageFromWomen from '../Components/Images/ImageForWomen.png'
 import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
-import Navbar from "../Components/NavbarComponent"
+import Navbar from  '../Components/navbarComponent'
 
 const HomePage = () => {
 
