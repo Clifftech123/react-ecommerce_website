@@ -8,7 +8,7 @@ import MenImagePng from "../Components/Images/ManPNG.png";
 import SecondContent from "../Components/Images/SecondConttent.svg";
 import RecommendationImageFromWomen from '../Components/Images/ImageForWomen.png'
 import { Post, MenProductSection, WomenProduct } from "../Items/Items.js";
-import NavbarComponent from "../Components/NavbarComponent"
+import Navbar from "../Components/NavbarComponent"
 
 const HomePage = () => {
 
@@ -25,9 +25,9 @@ const HomePage = () => {
 	return (
 		<>
 			{/* DISPLAY THE NAVBAR FROM THE NAVBAR COMPONENT */}
-			<div>
-				<NavbarComponent />
-			</div>
+			
+				<Navbar />
+			
 
 			{/* INTRO SECTION */}
 			<div id="Introduction" className="Introduction text-center">
