@@ -10,11 +10,11 @@ const NavBarComponent = () => {
 	return (
 		<>
 			{/*================ START  NAVBAR COMPONENT ========================*/}
-			<nav className=" w-full bg-NavbarBgColor font-light text-gray-200 shadow -sm">
+			<nav className=" w-full bg-NavbarBgColor font-light text-gray-300 shadow -sm">
 				<div className=" justify-between  px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 font-Poppins">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
-							<h2 className="  text-2xl  font-Poppins  text-bntColor ">
+							<h2 className="  text-2xl  font-Roboto text-bntColor ">
 								Adom.com
 							</h2>
 
@@ -65,13 +65,12 @@ const NavBarComponent = () => {
 						>
 							{/* NAV ITEMS */}
 							<ul className="items-center   text-2xl  justify-center space-y-8 md:flex md:space-x-10  md:space-y-0  md:divide-y-0">
-								<li className="  ">
+								<li className=" font-Roboto  ">
 									<NavLink to="/"> Home</NavLink>
 								</li>
-								<li className=" "> Phones </li>
-								<li className=" "> Food </li>
-								<li className=""> Cloths</li>
-								<li className=" "> Dashboard</li>
+								<li className=" font-Roboto "> <NavLink to="/login"> Men</NavLink> </li>
+								<li className="font-Roboto  "> <NavLink to="/login"> Women  </NavLink>   </li>
+								<li className=" font-Roboto "><NavLink to="/login"> Women  </NavLink>  </li>
 								<div>
 									<ul className=" text-2xl  mt-5    md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
 										<div className="m-2 ">
@@ -84,7 +83,6 @@ const NavBarComponent = () => {
 													Login{" "}
 												</button>
 											</span>
-											
 										</div>
 										{/* SOCIAL ICONS  */}
 										<li
@@ -107,7 +105,6 @@ const NavBarComponent = () => {
 				</div>
 			</nav>
 			{/* END OF NAVBAR COMPONENT */}
-			
 		</>
 	);
 };

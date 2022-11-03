@@ -7,10 +7,10 @@ export const Post = [
 			"We give you best and affordable product.With the little money,  you will get a quality product for us ",
 	},
 	{
-		title: "Costumer Support",
+		title: "Customer Support",
 		img: "https://www.revechat.com/wp-content/uploads/2022/02/customer-support-2-1280x720.jpg",
 		content:
-			"We have 24/7Costumer service  support for all our Costumers. We will assist you for you to get you choice of product ",
+			"We have 24/7Customer service  support for all our Customers. We will assist you for you to get you choice of product ",
 	},
 	{
 		title: " Consultation",

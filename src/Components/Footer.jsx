@@ -9,7 +9,7 @@ const Footer = () => {
 	const Instagram = "https://www.instagram.com/opokuisaiahclifford/";
 	return (
 		<>
-			<div className="  mt-20">
+			<div className="  mt-20 ">
 				<div className="max-w-6xl m-auto  bg-NavbarBgColor text-bntColor flex flex-wrap justify-center">
 					{/* FIRST  ROW HOME */}
 					<div className="p-5 w-48 ">

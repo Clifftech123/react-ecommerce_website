@@ -12,8 +12,6 @@ import Navbar from  '../Components/navbarComponent'
 
 const HomePage = () => {
 
-//    SHOEING AND HIDDEN TEXT TOGGLE
-
 
 	// SOCIAL ICONS LINKS
 	const Github = "https://github.com/Clifftech123";
@@ -25,11 +23,9 @@ const HomePage = () => {
 	return (
 		<>
 			{/* DISPLAY THE NAVBAR FROM THE NAVBAR COMPONENT */}
-			
-				<Navbar />
-			
+			<Navbar />
 
-			{/* INTRO SECTION */}
+			{/* ==============  START OF THE  INTRO SECTION============ */}
 			<div id="Introduction" className="Introduction text-center">
 				<div className="  bg-NavbarBgColor shadow  grid lg:grid-cols-2 2xl:grid-cols-5">
 					<div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
@@ -42,7 +38,7 @@ const HomePage = () => {
 									alt="SVG img "
 								/>
 							</div>
-							<h1 className=" tracking-normal  mt-6 text-2xl font-Poppins font-bold  text-bntColor sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+							<h1 className=" tracking-normal  mt-6 text-2xl font-Poppins  text-gray-300 sm:mt-8 sm:text-2xl lg:text-3xl xl:text-3xl">
 								Take Your online Shopping
 								<br className="hidden lg:inline" />
 								<span className="text-G_Purple">
@@ -51,14 +47,7 @@ const HomePage = () => {
 								</span>
 							</h1>
 							{/* INTRODUCTION TEXT  */}
-							<p className=" tracking-wide text-lg text-white font-Arimo mt-2  sm:mt-4 sm:text-xl">
-								An e-commerce website is one that allows people to buy and sell
-								physical goods, services, and digital products over the internet
-								rather than at a brick-and-mortar location. Through an
-								e-commerce website, a business can process orders, accept
-								payments, manage shipping and logistics, and provide customer
-								service.1
-							</p>
+
 							<div className="mt-4 sm:mt-6"></div>
 						</div>
 					</div>
@@ -89,7 +78,9 @@ const HomePage = () => {
 								<h4 className="text-2xl  mb-5 font-Poppins text-bntColor ">
 									{items.title}
 								</h4>
-								<p className="mb-2 leading-normal text-xl ">{items.content}</p>
+								<p className="mb-2  font-bold font-Roboto text-xl ">
+									{items.content}
+								</p>
 							</div>
 						</div>
 					))}
@@ -98,74 +89,41 @@ const HomePage = () => {
 			{/*====================== CONTENT  SITE  DESCRIPTION WITH IMAGE SECTION  ========================  */}
 			{/* FIRST ROW  */}
 			<section id="Content" className="bg-NavbarBgColor ">
-				<div className="grid gap-2  lg:grid-cols-2 mt-20 text-white">
+				<div className="grid gap-2  lg:grid-cols-2 mt-20 ">
 					<div className="md:p-20 ">
 						<img className="w-full " src={FirstContent} alt="" />
 					</div>
 					<div className="md::mt-40 md:px-40 ">
 						<div className="md:py-60 px-10 py-10">
-							<h1 className=" font-Poppins mb-5 text-white text-3xl  md:text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins mb-5  text-gray-200  text-3xl  md:text-4xl md:mb-5 font-bold">
 								Online selling and buy
 							</h1>
-							<p className="md:text-2xl  text-lg tracking-wide ">
+							<p className="md:text-2xl  font-Roboto  text-white text-lg tracking-wide ">
 								Online shopping is convenient. It couldn’t be any more
 								comfortable. All you need is a working computer, an internet
-								connection and some money. Voila! You’re getting your product
-								delivered a few days later — often free of charge.
+								connection and some money.
 							</p>
-							{/* <div className=" md:mt-5  mt-10  md:text-start text-center">
-								<button
-									className="  md:mt-10    text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
-									type="button"
-								>
-									See more
-								</button>
-							</div> */}
 						</div>
 					</div>
 				</div>
 
 				{/* SECOND ROW  */}
 
-				<div className="grid gap-2 mt-10 md:mt-0 lg:grid-cols-2 text-white ">
+				<div className="grid gap-2 mt-10 md:mt-0 lg:grid-cols-2 ">
 					<div className="md:hidden  mt-10">
 						{/* IMAGE SHOWING IN PHONE AND TABLET MODE */}
 						<img className=" w-full " src={SecondContent} alt="" />
 					</div>
 					<div className="lg:mt-40 lg:px-40">
 						<div className=" px-10">
-							<h1 className=" font-Poppins mb-5  text-white text-3xl  md:text-4xl md:mb-5 font-bold">
+							<h1 className=" font-Poppins mb-5  tracking-wide  text-gray-200 text-3xl  md:text-4xl md:mb-5 font-bold">
 								Managing Your Online Store
 							</h1>
-							<p className="md:text-2xl  mb-10 text-lg tracking-wide ">
+							<p className="md:text-2xl  font-Roboto  tracking-wide   text-white  mb-10 text-lg  ">
 								Obviously, there are many advantages of selling online, and the
 								ability to control every facet of your online business is
-								crucial to success in the long term. Multiorders simplifies this
-								and allows the user to sell through multiple channels and have
-								complete control over their business.
+								crucial to success in the long term.
 							</p>
-							{/* SEE MORE BUTTON */}
-							{/* <div className=" md:mt-5    md:text-start text-center">
-								<button
-									className="  md:mt-10  mb-10  mt-10  text-center px-10 text-xl py-2 rounded-md  bg-bntColor"
-									type="button"
-								>
-									See more
-								</button>
-							</div> */}
-
-							{/* HIDDEN TEXT  */}
-							<div>
-								<p className="text-2xl  mt-3 hidden font-serif">
-									An e-commerce website is one that allows people to buy and
-									sell physical goods, services, and digital products over the
-									internet An e-commerce website is one that allows people to
-									buy and sell physical goods, services, and digital products
-									over the internet An e-commerce website is one that allows
-									people to buy and sell physical goods, services, and digital
-									products over the internet
-								</p>
-							</div>
 						</div>
 					</div>
 					{/* IMAGE SHOWING IN LARGE  MODE  */}
@@ -181,17 +139,17 @@ const HomePage = () => {
 			FOR MEN WITH AND IMAGE
 			
 			 =========  */}
-			<section className=" bg-white  ">
-				<div className="grid gap-2  lg:grid-cols-2   overflow-clip px:20 ">
-					<div className="md:p-40  hidden md:block">
+			<section className=" bg-white mt-20 md:mt-0 ">
+				<div className="grid gap-2  lg:grid-cols-2    overflow-clip px:20 ">
+					<div className="md:p-20  hidden md:block">
 						<img className="w-full  overflow-clip " src={MenImagePng} alt="" />
 					</div>
 					<div className="md:mt-40  mb:40  md:px-40  hidden md:block">
-						<div className="md:py-60  p-40px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor md:text-7xl  text-2xl md:mb-5 font-bold">
-								Quality Product for men
+						<div className="md:py-40  p-40px-10">
+							<h1 className=" font-Poppins text-NavbarBgColor md:text-5xl  text-2xl md:mb-5 font-bold">
+								Product for men
 							</h1>
-							<p className="text-lg  tracking-wide md:text-3xl font-serif  text-black">
+							<p className="text-lg  font-Roboto  tracking-wide  font-normal md:text-3xl ">
 								If you are specifically hunting for designer pieces, then you
 								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
 								Pernia Qureshi, it is a one-stop destination for everything
@@ -203,12 +161,12 @@ const HomePage = () => {
 					</div>
 
 					{/* SHOWING IT ON SMALL DEVICES */}
-					<div className="mt-40  mb:10  px-10  md:hidden">
+					<div className="mt-40  mb:10   px-10  md:hidden">
 						<div className="md:py-60 mb-20 p-40px-10">
-							<h1 className=" font-Poppins text-NavbarBgColor  text-4xl mb-5 font-bold">
+							<h1 className=" font-Poppins text-NavbarBgColor text-3xl mb-5 font-bold">
 								Quality Product for men
 							</h1>
-							<p className="text-2xl  track-wider text-black">
+							<p className="text-2xl  font-Roboto    track-wider text-black">
 								If you are specifically hunting for designer pieces, then you
 								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
 								Pernia Qureshi, it is a one-stop destination for everything
@@ -231,12 +189,12 @@ const HomePage = () => {
 			=============  */}
 			<section
 				id="Recommendation"
-				className="  md:mr-0  md:ml-0 mr-10 ml-10 mx-5 md:px-40 "
+				className="  md:mr-0  md:ml-0 mr-10 ml-10 mx-5 md:px-20 "
 			>
 				<div className="grid h-200 gap-2 md:gap-10 lg:grid-cols-4   ">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full  shadow-2xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md   borer border-NavbarBgColor relative overflow-hidden  "
+							className="w-full  shadow-5xl  bg-NavbarBgColor md:shadow-sm mt-10  rounded-lg    align-middle justify-center  lg:max-w-md    borer border-NavbarBgColor relative overflow-hidden  "
 							key={name}
 						>
 							<span className="">
@@ -247,17 +205,17 @@ const HomePage = () => {
 								/>
 							</span>
 							<div className="p-4   ">
-								<h4 className="text-2xl  font-bold  font-Poppins text-gray-400  ">
+								<h4 className="text-2xl  font-bold  font-Roboto text-gray-300  ">
 									{Product.amountMoney}
 									<span className=" ml-20"> </span>
 								</h4>
-								<p className=" leading-normal   text-white  text-lg ">
+								<p className=" leading-normal     mt-5  text-white  text-lg ">
 									{Product.content}
 								</p>
 
 								<button
 									type="button"
-									className=" text-bntColor font-bold mt-5 text-xl font-Poppins"
+									className=" text-bntColor font-bold mt-5 text-xl font-Roboto"
 									onClick={() => Navigate("/login")}
 								>
 									See all
@@ -294,14 +252,14 @@ const HomePage = () => {
 			MORE RECOMMENDATION  FOR  WOMEN HEADING CONTENT   SECTION  
 			CONTENT WITH IMAGE DISPLAY WOMEN  CLOTHING AND WHY YOU SHOULD BUY FROM US 
 			=========  */}
-			<section className="bg-white md:mt-20 ">
+			<section className="bg-white   mt-10 md:mt-20 ">
 				<div className="grid gap-2  lg:grid-cols-2  overflow-clip text-white">
-					<div className=" md:px-40 ">
-						<div className=" md:py-96  py-0 px-10 mt-20 mb-10">
-							<h1 className=" font-Poppins  text-NavbarBgColor mb-2 text-5xl md:mb-5 font-bold">
+					<div className=" md:px-20 ">
+						<div className=" md:py-60  py-0 px-10 mt-20 mb-10">
+							<h1 className=" font-Poppins  text-NavbarBgColor mb-2 text-4xl md:mb-5 font-bold">
 								Women's Dresses
 							</h1>
-							<p className="text-2xl  tracking-wider font-serif text-black">
+							<p className="text-2xl mt-5  font-Roboto tracking-wider   text-black">
 								If you are specifically hunting for designer pieces, then you
 								can't miss out on Pernia's Pop Up Shop. Started by entrepreneur
 								Pernia Qureshi, it is a one-stop destination for everything
@@ -312,7 +270,7 @@ const HomePage = () => {
 						</div>
 					</div>
 
-					<div className="md:p-60  ">
+					<div className="md:p-20 ">
 						{/* <note:!> I WILL ADD </note:!> */}
 						<img
 							className="w-full  hidden md:block overflow-clip "
@@ -328,7 +286,7 @@ const HomePage = () => {
 			===================== */}
 			<section
 				id="Recommendation"
-				className="   md:mr-0  md:ml-0 mr-10 ml-10  md:px-40    "
+				className="   md:mr-0  md:ml-0 mr-10 ml-10  md:px-20    "
 			>
 				<div className="  h-200 grid gap-2 md:gap-10 lg:grid-cols-4 mt-10 ">
 					{WomenProduct.map((Product, name) => (
