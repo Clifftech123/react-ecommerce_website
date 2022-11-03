@@ -28,8 +28,8 @@ const Logins = () => {
 			};
 	return (
 		<>
-			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden  items-center  sm:px-6 lg:px-8">
-				<div className="max-w-md  py-10  px-15 shadow-lg border border-indigo-100  bg-white w-full space-y-5">
+			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden  bg-gray-50 items-center  sm:px-6 lg:px-8">
+				<div className="max-w-md  py-10  px-15 shadow-sm border border-indigo-100  bg-white w-full space-y-5">
 					<div>
 						<h2 className=" text-center text-2xl  md:text-3xl mt-5 mb-0 font-Poppins text-gray-900">
 							Sign in to your account

@@ -34,8 +34,8 @@ const Signup = () => {
        
 	return (
 		<>
-			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen     overflow-hidden">
-				<div className=" w-full  shadow-lg md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
+			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen   bg-gray-50   overflow-hidden">
+				<div className=" w-full  shadow-sm md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
 					<h1 className="md:text-4xl text-2xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
 						Sign UP
 					</h1>
