@@ -209,7 +209,7 @@ const HomePage = () => {
 									{Product.amountMoney}
 									<span className=" ml-20"> </span>
 								</h4>
-								<p className=" leading-normal     mt-5  text-white  text-lg ">
+								<p className=" leading-normal  font-Roboto md:font-sans    mt-5  text-white  text-lg ">
 									{Product.content}
 								</p>
 
@@ -304,7 +304,7 @@ const HomePage = () => {
 									{Product.WomenPrice}
 									<span className=" ml-20"> </span>
 								</h4>
-								<p className="mb-2 leading-normal text-lg   text-white">
+								<p className="mb-2 leading-normal text-lg font-Roboto md:font-sans  text-white">
 									{Product.content}
 								</p>
 
