@@ -24,7 +24,7 @@ const WomenProduct = () => {
 				<div className="  h-200 grid gap-2 md:gap-10 lg:grid-cols-4  ">
 					{WomenProductLinks.map((Product, name) => (
 						<div
-							className="w-full  mt-10  rounded-lg md:shadow-sm shadow-md border-2   border-lightprimary md:hover:shadow-lg   align-middle justify-center   lg:max-w-md  bg-white  relative overflow-hidden   "
+							className="w-full  mt-10  rounded-lg md:shadow-sm  border-2   border-lightprimary md:hover:shadow-lg   align-middle justify-center   lg:max-w-md  bg-white  relative overflow-hidden   "
 							key={name}
 						>
 							<img
