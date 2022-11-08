@@ -94,7 +94,7 @@ const Signup = () => {
 						<div className="mt-6">
 							<button
 								type="submit "
-								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white   bg-indigo-600  hover:bg-indigo-700
+								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white   bg-primary  hover:bg-indigo-700
                              focus:outline-none focus:ring-2 focus:ring-offset-2
                              focus:ring-indigo-500 rounded-md "
 							>
@@ -105,7 +105,7 @@ const Signup = () => {
 
 					<p className="mt-8 text-lg font-Poppins  text-center text-gray-700">
 						Already have an account?{" "}
-						<span className="text-indigo-600">
+						<span className="text-primary">
 							<NavLink to="/login"> Sign in </NavLink>
 						</span>
 					</p>
@@ -113,7 +113,7 @@ const Signup = () => {
 					{/* RETURNING HOME  */}
 					<p className="text-lg font-Poppins mb-5 text-center mt-1">
 						Go back
-						<span className="text-indigo-600">
+						<span className="text-primary">
 							<NavLink to="/"> Home </NavLink>
 						</span>
 					</p>
