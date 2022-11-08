@@ -28,8 +28,8 @@ const Logins = () => {
 			};
 	return (
 		<>
-			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden  bg-gray-50 items-center  sm:px-6 lg:px-8">
-				<div className="max-w-md  py-10  px-15 shadow-sm border border-indigo-100  bg-white w-full space-y-5">
+			<div className="h-full relative mx-2  flex  justify-center min-h-screen overflow-hidden   bg-BgColor items-center  sm:px-6 lg:px-8">
+				<div className="max-w-md  py-10  px-15 shadow-sm border-2   border-lightprimary  bg-white w-full space-y-5">
 					<div>
 						<h2 className=" text-center text-2xl  md:text-3xl mt-5 mb-0 font-Poppins text-gray-900">
 							Sign in to your account
@@ -37,7 +37,7 @@ const Logins = () => {
 					</div>
 					{/* FORM */}
 					<form className="mt-2 p-10  space-y-6">
-						<div className="rounded-md  p-30 shadow-sm ">
+						<div className="rounded-md  p-30  ">
 							{/* EMAIL */}
 							<input
 								id="email-address"
@@ -77,7 +77,7 @@ const Logins = () => {
 								type="submit"
 								className="group relative w-full flex justify-center
                                  py-2 font-Poppins text-lg px-4 border border-transparent  font-medium
-                                  rounded-md text-white  bg-NavbarBgColor hover:bg-indigo-700
+                                  rounded-md text-white   bg-indigo-600  hover:bg-indigo-700
                                  focus:outline-none focus:ring-2 focus:ring-offset-2
                                focus:ring-indigo-500"
 							>
