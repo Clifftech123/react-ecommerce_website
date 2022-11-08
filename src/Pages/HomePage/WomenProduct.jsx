@@ -53,7 +53,7 @@ const WomenProduct = () => {
 									See all
 								</button>
 								{/* SOCIAL ICONS */}
-								<span className="flex justify-between mt-5  font-bold   text-white    text-xl ">
+								<span className="flex justify-between mt-5  font-bold  text-gray-700    text-xl ">
 									<li title="Github" className="   block  ">
 										<a href={Github} target={"_blank"} rel="noreferrer">
 											<FaGithub />
