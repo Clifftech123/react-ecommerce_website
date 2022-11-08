@@ -6,7 +6,7 @@ const Services = () => {
 		<>
 			{/*   SERVICES  */}
 			<section id="Card_section" className="">
-				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-5 lg:px-40 ">
+				<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-20   px-20 lg:px-40 ">
 					{Post.map((items, key) => (
 						<div
 							className="w-full Lg:shadow-lg mt-10  rounded-md  align-middle justify-center  shadow-sm  lg:max-w-md  bg-white"
