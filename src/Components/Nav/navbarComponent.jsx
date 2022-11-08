@@ -83,7 +83,7 @@ const NavBarComponent = () => {
 										<div className="m-2 ">
 											<span>
 												<button
-													className=" center  bg-indigo-600 p-2 w-40  m-2 rounded-lg   text-white"
+													className=" center  bg-primary p-2 w-40  m-2 rounded-lg   text-white"
 													onClick={() => Navigate("/login")}
 													type="button"
 												>
