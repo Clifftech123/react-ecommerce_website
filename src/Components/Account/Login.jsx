@@ -88,7 +88,7 @@ const Logins = () => {
 
 					<p className=" text-lg font-Poppins mb-5 text-center text-gray-700">
 						I don't have account ?{" "}
-						<span className="text-indigo-600">
+						<span className="text-primary">
 							<NavLink to="/signup"> Sing Up </NavLink>
 						</span>
 					</p>
@@ -96,7 +96,7 @@ const Logins = () => {
 					{/* RETURNING HOME  */}
 					<p className="text-lg font-Poppins mb-5 text-center ">
 						Go back
-						<span className="text-indigo-600">
+						<span className="text-primary">
 							{" "}
 							<NavLink to="/"> Home </NavLink>
 						</span>
