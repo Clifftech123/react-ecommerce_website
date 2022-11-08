@@ -15,7 +15,7 @@ const MenProduct = () => {
 				<div className="grid h-200  gap-2 md:gap-10 lg:grid-cols-4   ">
 					{MenProductSection.map((Product, name) => (
 						<div
-							className="w-full  mt-10  rounded-lg border-2   border-lightprimary shadow-sm  md:hover:shadow-lg bg-white  align-middle justify-center  lg:max-w-md     relative overflow-hidden  "
+							className="w-full  mt-10  rounded-lg border-2   border-lightprimary md:shadow-sm shadow-md  md:hover:shadow-lg bg-white  align-middle justify-center  lg:max-w-md     relative overflow-hidden  "
 							key={name}
 						>
 							<span className="">
@@ -41,7 +41,6 @@ const MenProduct = () => {
 								>
 									See all
 								</button>
-							
 							</div>
 						</div>
 					))}
