@@ -6,7 +6,7 @@ const HeroSection = () => {
 		<>
 			{/* ==============  HERO SECTION ==============*/}
 			<div id="Introduction" className="Introduction text-center">
-				<div className="  bg-NavbarBgColor shadow  grid lg:grid-cols-2 2xl:grid-cols-5">
+				<div className="  bg-white border-2   border-lightprimary shadow-sm  grid lg:grid-cols-2 2xl:grid-cols-5">
 					<div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
 						<div className="xl:max-w-lg ">
 							{/* IMAGE  DISPLAY ON SMALL SCREEN  ONLY  */}
@@ -17,7 +17,7 @@ const HeroSection = () => {
 									alt="SVG img "
 								/>
 							</div>
-							<h1 className=" tracking-normal  mt-6 text-2xl font-Poppins  text-gray-300 sm:mt-8 sm:text-2xl lg:text-3xl xl:text-3xl">
+							<h1 className=" tracking-normal mt-6  text-gray-500 text-2xl  sm:mt-8 sm:text-2xl md:text-4xl ">
 								Take Your online Shopping
 								<br className="hidden lg:inline" />
 								<span className="text-G_Purple">
