@@ -8,14 +8,15 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 const App = () => {
 	return (
 		<>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/login" element={<Logins />} />
-					<Route path="/signup" element={<Signup />} />
-					<Route path="/dashboard" element={<Dashboard />} />
-				</Routes>
-			</BrowserRouter>
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/login" element={<Logins />} />
+						<Route path="/signup" element={<Signup />} />
+						<Route path="/dashboard" element={<Dashboard />} />
+					</Routes>
+				</BrowserRouter>
+			
 		</>
 	);
 };
