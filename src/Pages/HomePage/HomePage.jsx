@@ -10,39 +10,41 @@ import WomenProduct from "./WomenProduct"
 const HomePage = () => {
 	return (
 		<>
-			{/*  NAVBAR */}
-			<section id="Navbar">
-				<Navbar />
-			</section>
-			{/* HERE SECTION */}
-			<section id="Hero">
-				<HeroSection />
-			</section>
+			<div className="font-Poppins">
+				{/*  NAVBAR */}
+				<section id="Navbar">
+					<Navbar />
+				</section>
+				{/* HERE SECTION */}
+				<section id="Hero">
+					<HeroSection />
+				</section>
 
-			{/* SERVICE SECTION */}
-			<section id="Service">
-				<Services />
-			</section>
+				{/* SERVICE SECTION */}
+				<section id="Service">
+					<Services />
+				</section>
 
-			{/* DESCRIPTION  */}
-			<section id="Description">
-				<Description />
-			</section>
-     
-			{/* MEN PRODUCT  */}
-			<section>
-				<MenProduct />
-			</section>
-			
-			{/* WOMEN PRODUCT SECTION */}
-			<section>
-			<WomenProduct/>
-			</section>
+				{/* DESCRIPTION  */}
+				<section id="Description">
+					<Description />
+				</section>
 
-			{/* FOOTER  */}
-			<section id="Footer_section" className=" bg-NavbarBgColor">
-				<Footer />
-			</section>
+				{/* MEN PRODUCT  */}
+				<section>
+					<MenProduct />
+				</section>
+
+				{/* WOMEN PRODUCT SECTION */}
+				<section>
+					<WomenProduct />
+				</section>
+
+				{/* FOOTER  */}
+				<section id="Footer_section" className=" bg-NavbarBgColor">
+					<Footer />
+				</section>
+			</div>
 		</>
 	);
 };
