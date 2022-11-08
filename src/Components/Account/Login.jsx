@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../Firebase";
+import { auth } from  '../Firebase/Firebase'
 import { NavLink, useNavigate } from "react-router-dom";
 const Logins = () => {
 
