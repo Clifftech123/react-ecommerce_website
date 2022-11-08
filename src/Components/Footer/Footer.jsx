@@ -80,7 +80,7 @@ const Footer = () => {
 						<div className="md:flex-1   md:space-x-10 space-x-4   md:flex-row-reverse mt-2 flex-row flex">
 							{/* FACEBOOK */}
 							<button className="w-6 mx-1  md:mx-10 " title="Facebook">
-								<span className="  text-gray-700 text-4xl fill-current  hover:text-gray-400 cursor-pointer">
+								<span className="  text-primary text-4xl fill-current  hover:text-gray-400 cursor-pointer">
 									<a href={Facebook} target={"_blank"} rel="noreferrer">
 										<FaFacebook />
 									</a>
@@ -88,7 +88,7 @@ const Footer = () => {
 							</button>
 							{/* TWITTER */}
 							<button className="w-6 mx-1" title="Twitter">
-								<span className="  text-gray-700 text-4xl fill-current  hover:text-gray-400 cursor-pointer">
+								<span className="  text-primary text-4xl fill-current  hover:text-gray-400 cursor-pointer">
 									<a href={Twitter} target={"_blank"} rel="noreferrer">
 										<FaTwitter />
 									</a>
@@ -96,7 +96,7 @@ const Footer = () => {
 							</button>
 							{/* INSTAGRAM */}
 							<button className="w-6 mx-1" title="Instagram">
-								<span className="  text-gray-700 text-4xl fill-current  hover:text-gray-400 cursor-pointer">
+								<span className="  text-primary text-4xl fill-current  hover:text-gray-400 cursor-pointer">
 									<a href={Instagram} target={"_blank"} rel="noreferrer">
 										<FaInstagram />
 									</a>
