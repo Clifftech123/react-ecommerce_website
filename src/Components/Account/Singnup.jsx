@@ -34,13 +34,13 @@ const Signup = () => {
        
 	return (
 		<>
-			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen   bg-gray-50   overflow-hidden">
-				<div className=" w-full  shadow-sm md:w-screen p-5 m-auto  border border-indigo-100  bg-white rounded-md lg:max-w-xl">
+			<div className="relative mx-2 md:mx-0 flex flex-col justify-center min-h-screen    bg-BgColor   overflow-hidden">
+				<div className=" w-full  shadow-sm md:w-screen p-5 m-auto   border-2   border-lightprimary bg-white rounded-md lg:max-w-xl">
 					<h1 className="md:text-4xl text-2xl font-Poppins text-center text-NavbarBgColor  uppercase decoration-wavy">
 						Sign UP
 					</h1>
 					{/* FORM */}
-					<form onSubmit={onSubmit} className="mt-2 p-7">
+					<form onSubmit={onSubmit} className="mt-2 p-7  ">
 						<div className="mb-2 ">
 							{/* FIRST NAME */}
 							<input
@@ -49,7 +49,7 @@ const Signup = () => {
 								name="firstname"
 								type="text"
 								required
-								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
+								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg border-2   border-lightprimary  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
 								placeholder="First Name"
 							/>
 						</div>
@@ -94,7 +94,7 @@ const Signup = () => {
 						<div className="mt-6">
 							<button
 								type="submit "
-								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white  bg-NavbarBgColor hover:bg-indigo-700
+								className="w-full px-10 py-4 font-Poppins text-lg tracking-wide  transition-colors duration-200 transform  text-white   bg-indigo-600  hover:bg-indigo-700
                              focus:outline-none focus:ring-2 focus:ring-offset-2
                              focus:ring-indigo-500 rounded-md "
 							>
