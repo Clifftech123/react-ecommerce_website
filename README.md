@@ -7,12 +7,12 @@ This is a simple React and  firebase E-commerce web application.
  when he create to get the access to the dashboard and the product page 
  . 
 
- `Contribution is not currently variable`
+ `Contribution is not currently available`
 
  **Teach Stacks**
-  # ##Tailwind css 
-  # ##React js 
-  # ## Firebase
+  *Tailwind css* 
+  *React js*
+   *Firebase*
 
  Live [Demo](https://e-commerce-git-main-clifftech123.vercel.app/)
 
