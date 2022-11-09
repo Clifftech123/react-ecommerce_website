@@ -1,12 +1,18 @@
 This is a simple React and  firebase E-commerce web application. 
 
 **Description**
- User will be able to create a new account before will able to access dashboard.
- You can sing's  or logins with your google firebase authentication.
+ This product is an E-commerce site where a user need to create 
+ an account using google e-mail  and password. 
+ A user will have and access to the variable product in deairs 
+ when he create to get the access to the dashboard and the product page 
+ . 
+
+ `Contribution is not currently variable`
 
  **Teach Stacks**
- Tailwind css 
- React js 
- Firebase
+  # ##Tailwind css 
+  # ##React js 
+  # ## Firebase
 
-q
+ Live [Demo](https://e-commerce-git-main-clifftech123.vercel.app/)
+
