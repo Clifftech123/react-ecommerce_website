@@ -10,9 +10,14 @@ This is a simple React and  firebase E-commerce web application.
  `Contribution is not currently available`
 
  **Teach Stacks**
-  *Tailwind css* 
-  *React js*
-   *Firebase*
+
+
+  *Tailwind css 
+  *React js
+  *Firebase
+
+
+   ![Home Page](/src/Components/assets/README.png)
 
  Live [Demo](https://e-commerce-git-main-clifftech123.vercel.app/)
 
