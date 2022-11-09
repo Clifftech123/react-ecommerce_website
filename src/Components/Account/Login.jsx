@@ -7,7 +7,7 @@ const Logins = () => {
 	
 	   const Navigate = useNavigate();
 			const [email, setEmail] = useState("");
-			const [password, setPassword] = useState("");
+	const [ password, setPassword ] = useState( "" );
            
 			// ON LOGINS FUNCTION 
 			const onLogin = (e) => {
@@ -16,8 +16,8 @@ const Logins = () => {
 					.then((userCredential) => {
 						// Signed in
 						const user = userCredential.user;
-						Navigate("/dashboard");
-						alert(user)
+						Navigate("/product");
+						console.log(user)
 						   
 					})
 					.catch((error) => {
