@@ -12,7 +12,7 @@ const WomenProduct = () => {
 
   return (
 		<>
-			{/* RENDING THE DESCRIPTION 2 FROM THE THE DESCRIPTIONTWO  COMPONENT */}
+			{/* RENDING THE DESCRIPTION 2 FROM THE THE DESCRIPTION  COMPONENT */}
 			<section id="DescriptionTwo">
 				<DescriptionTwo />
 			</section>

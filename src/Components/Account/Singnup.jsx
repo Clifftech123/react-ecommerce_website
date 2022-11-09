@@ -46,7 +46,7 @@ const Signup = () => {
 							<input
 								value={firstName}
 								onChange={(e) => setFirstName(e.target.value)}
-								name="firstname"
+								name="firstName"
 								type="text"
 								required
 								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg border-2   border-lightprimary  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -54,14 +54,14 @@ const Signup = () => {
 							/>
 						</div>
 						<div className="mb-2">
-							{/* LASTNAME */}
+							{/* LAST_NAME */}
 							<input
 								type="text"
 								label="Last name"
 								value={lastName}
 								onChange={(e) => setLastName(e.target.value)}
 								required
-								name="lastname"
+								name="lastName"
 								className="block w-full px-10 py-4 mt-2 font-Poppins text-lg  border border-gray-300  rounded-md focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
 								placeholder="Last Name"
 							/>
