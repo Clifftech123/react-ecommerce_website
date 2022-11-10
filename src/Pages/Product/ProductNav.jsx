@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../Components/assets/logo.png";
+import { FaSistrix } from "react-icons/fa";
 
 const ProductNav = () => {
 	// TOGGLE
@@ -9,7 +10,7 @@ const ProductNav = () => {
 	return (
 		<>
 			<nav className=" w-full bg-BgColor font-light  shadow-sm">
-				<div className=" justify-between  px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 font-Poppins">
+				<div className=" justify-between  px-4 md:items-center md:flex md:px-20 font-Poppins">
 					<div>
 						<div className="flex items-center justify-between py-3 md:py-5 md:block">
 							<img src={logo} alt="Logo" className="cursor-pointer  h-9" />
@@ -61,11 +62,17 @@ const ProductNav = () => {
 						>
 							{/* NAV ITEMS */}
 							<ul className="items-center  text-2xl  justify-center space-y-8 md:flex md:space-x-10  md:space-y-0  md:divide-y-0">
-								{/* SEARCH BUTTON  */}
-								<input
-									type="Search"
-									className=" center border-2   border-lightprimary shadow-sm bg-white p-2 w-80  m-2 rounded-lg   text-gray-700"
-								/>
+								<div className="hidden md:block">
+									{/* SEARCH BUTTON  on LAGER DEVICES  */}
+									<div className=" relative flex items-center  text-gray-400 focus-within:text-gray-600">
+										<FaSistrix className="w-5 h-5 absolute ml-5 pointer-events-none" />
+										<input
+											type="Search"
+											placeholder="Search"
+											className="  pr-3 pl-10 center   border-2 text-gray-500  border-lightprimary shadow-sm bg-white p-2 w-80  m-2 rounded-xl  focus:ring-gray-500 ring-gray-200 focus:border-lightprimary focus:outline-none "
+										/>
+									</div>
+								</div>
 
 								<li className="  ">
 									<NavLink to="/product"> Home</NavLink>
@@ -73,13 +80,19 @@ const ProductNav = () => {
 								<li>Men'Cloth</li>
 								<li>Women</li>
 
-								<div>
-									<ul className=" text-2xl  mt-5    md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
-										<div className="m-2 ">
-											<span></span>
-										</div>
-									</ul>
+								<div className="md:hidden flex justify-center ">
+									{/* SEARCH BUTTON  on LAGER DEVICES  */}
+									<div className=" relative flex items-center  text-gray-400 focus-within:text-gray-600">
+										<FaSistrix className="w-5 h-5 absolute ml-5 pointer-events-none" />
+										<input
+											type="Search"
+											placeholder="Search"
+											className="  pr-3 pl-10 center   border-2 text-gray-500  border-lightprimary shadow-sm bg-white p-2 w-80  m-2 rounded-xl  focus:ring-gray-500 ring-gray-200 focus:border-lightprimary focus:outline-none "
+										/>
+									</div>
 								</div>
+
+								<div></div>
 							</ul>
 						</div>
 					</div>
