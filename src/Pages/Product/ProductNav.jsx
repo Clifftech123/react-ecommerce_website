@@ -65,7 +65,7 @@ const ProductNav = () => {
 								<div className="hidden md:block">
 									{/* SEARCH BUTTON  on LAGER DEVICES  */}
 									<div className=" relative flex items-center  text-gray-400 focus-within:text-gray-600">
-										<FaSistrix className="w-5 h-5 absolute ml-5 pointer-events-none" />
+										<FaSistrix className="w-5   h-5 absolute ml-5 pointer-events-none" />
 										<input
 											type="Search"
 											placeholder="Search"
@@ -77,8 +77,8 @@ const ProductNav = () => {
 								<li className="  ">
 									<NavLink to="/product"> Home</NavLink>
 								</li>
-								<li>Men'Cloth</li>
-								<li>Women</li>
+								<li>About</li>
+								<li>Contact </li>
 
 								<div className="md:hidden flex justify-center ">
 									{/* SEARCH BUTTON  on LAGER DEVICES  */}
