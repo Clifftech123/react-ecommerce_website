@@ -21,6 +21,7 @@ const Signup = () => {
 					const user = userCredential.user;
 					alert(user);
 					Navigate("/login");
+					
 					// ...
 				})
 				// TROWING AN ERROR  THE USER 
