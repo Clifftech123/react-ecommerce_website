@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../Components/assets/logo.png";
-import { FaSistrix } from "react-icons/fa";
+
 
 const ProductNav = () => {
 	// TOGGLE
-	const [navbar, setNavbar] = useState(false);
+	const [ navbar, setNavbar ] = useState( false );
+		const Navigate = useNavigate();
 
 	return (
 		<>
@@ -62,35 +63,18 @@ const ProductNav = () => {
 						>
 							{/* NAV ITEMS */}
 							<ul className="items-center  text-2xl  justify-center space-y-8 md:flex md:space-x-10  md:space-y-0  md:divide-y-0">
-								<div className="hidden md:block">
-									{/* SEARCH BUTTON  on LAGER DEVICES  */}
-									<div className=" relative flex items-center  text-gray-400 focus-within:text-gray-600">
-										<FaSistrix className="w-5   h-5 absolute ml-5 pointer-events-none" />
-										<input
-											type="Search"
-											placeholder="Search"
-											className="  pr-3 pl-10 center   border-2 text-gray-500  border-lightprimary shadow-sm bg-white p-2 w-80  m-2 rounded-xl  focus:ring-gray-500 ring-gray-200 focus:border-lightprimary focus:outline-none "
-										/>
-									</div>
-								</div>
-
 								<li className="  ">
 									<NavLink to="/product"> Home</NavLink>
 								</li>
 								<li>About</li>
 								<li>Contact </li>
-
-								<div className="md:hidden flex justify-center ">
-									{/* SEARCH BUTTON  on LAGER DEVICES  */}
-									<div className=" relative flex items-center  text-gray-400 focus-within:text-gray-600">
-										<FaSistrix className="w-5 h-5 absolute ml-5 pointer-events-none" />
-										<input
-											type="Search"
-											placeholder="Search"
-											className="  pr-3 pl-10 center   border-2 text-gray-500  border-lightprimary shadow-sm bg-white p-2 w-80  m-2 rounded-xl  focus:ring-gray-500 ring-gray-200 focus:border-lightprimary focus:outline-none "
-										/>
-									</div>
-								</div>
+								<button
+									className=" center bg-primary text-white  hover:bg-indigo-700  p-2 w-40  m-2 rounded-lg "
+									type="button"
+									onClick={() => Navigate("/")}
+								>
+									Logout
+								</button>
 
 								<div></div>
 							</ul>
