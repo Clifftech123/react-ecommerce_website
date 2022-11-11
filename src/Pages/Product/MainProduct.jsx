@@ -1,4 +1,5 @@
 import React,{ useState,useEffect} from 'react'
+import Skeleton from 'react-loading-skeleton'
 
 const MainProduct = () => {
     const [ data, setData ] = useState( [] )
@@ -8,7 +9,9 @@ const MainProduct = () => {
    
 
     // USE EFFECT FUNCTION THAT TAKES THE WHOLE FUNCTIONALITY IN THE PAGE 
-    useEffect( () => {
+	useEffect( () => {
+		
+		
          const getProducts = async () =>{
             setLoading( true )
             const response = await fetch( 'https://fakestoreapi.com/products' )
@@ -27,72 +30,109 @@ const MainProduct = () => {
     
     }, [] );
 
-    // LOADING FUNCTION THAT SHOWS LOADING ANIMATION ICON
+
+    // Loading    function 
     const Loading = () => {
         return (
-            <>
-                loading .....
-            </>
-        )
-    }
+					<>
+						<div className="flex justify-center">
+							<Skeleton className="h-[350px] " />
+						</div>
+
+						<div className="flex justify-center">
+							<Skeleton className="h-[350px] " />
+						</div>
+						<div className="flex justify-center">
+							<Skeleton className="h-[350px] " />
+						</div>
+						<div className="flex justify-center">
+							<Skeleton className="h-[350px] " />
+						</div>
+					</>
+				);
+	}
+	
+
+
+// Filter function .This function  filter  items base on the user preference.When the user click any of the preference buttons
+	const filterProduct = ( cat ) => {
+		const updatedList = data.filter( ( x ) => x.category === cat )
+		setFilter(updatedList)
+	}
+
     
-    // SHOWING PRODUCT FUNCTION 
+    // The main function that  render  all the component
     const ShowProducts = () => {
         return (
 					<>
-						<div className="flex justify-center  mt-20  ">
+						{/* Heading button that will help user to filter the items it preference */}
+						<div className="md:flex justify-center  grid-col  mt-20  ">
 							<button
-								className="   outline outline-offset-1 outline-gray-700  p-2 w-40  m-2 rounded-lg   text-gray-600"
+								className="    border bottom-2 border-indigo-200  hover:bg-primary hover:text-white   p-2 w-40  m-2 rounded-lg   text-gray-600"
 								type="button"
+								onClick={() => setFilter(data)}
 							>
 								All
 							</button>
 							<button
-								className=" center  outline outline-offset-1 outline-gray-700  p-2 w-60  m-2 rounded-lg   text-gray-600"
+								className=" center   hover:bg-primary hover:text-white  border bottom-2 border-indigo-200  p-2 w-60  m-2 rounded-lg   text-gray-600"
 								type="button"
+								onClick={() => filterProduct("men's clothing")}
 							>
-								Men's cloth
+								Men's clothing
 							</button>
 							<button
-								className=" center  outline outline-offset-1 outline-gray-700  p-2 w-60  m-2 rounded-lg   text-gray-600"
+								className=" center   hover:bg-primary hover:text-white    border bottom-2 border-indigo-200  p-2 w-60  m-2 rounded-lg   text-gray-600"
 								type="button"
+								onClick={() => filterProduct("women's clothing")}
 							>
-								Women's cloth
+								Women's clothing
 							</button>
 							<button
-								className=" center  outline outline-offset-1 outline-gray-700  p-2 w-40  m-2 rounded-lg   text-gray-600"
+								className=" center  hover:bg-primary hover:text-white    border bottom-2 border-indigo-200  p-2 w-40  m-2 rounded-lg   text-gray-600"
 								type="button"
+								onClick={() => filterProduct("jewelery")}
 							>
 								Jewelry
 							</button>
 							<button
-								className=" center  outline outline-offset-1 outline-gray-700  p-2 w-40  m-2 rounded-lg   text-gray-600"
+								className=" center   border bottom-2 border-indigo-200  hover:bg-primary hover:text-white  p-2 w-40  m-2 rounded-lg   text-gray-600"
 								type="button"
+								onClick={() => filterProduct("electronics")}
 							>
 								Electronics
 							</button>
 						</div>
 
-						{/* SHOWING THE PRODUCT CONTENT */}
+						{/* Showing all the product fetching  by the Api  */}
 						{
-							<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-10   px-10 md:px-40 ">
-								{filter.map((product, key) => (
+							<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-10   px-20 md:px-40 ">
+								{filter.map((product) => (
 									<div
-										className=" mt-10  rounded-sm     align-middle justify-center shadow-sm  lg:max-w-md  bg-white"
-										key={key}
+										className=" relative overflow-hidden    mt-10  rounded-lg md:hover:shadow-lg align-middle justify-center shadow-sm  lg:max-w-md  bg-white"
+										key={product.id}
 									>
 										<img
-											className="object-cover w-full h-48"
+											className="object-cover w-full  h-60  object-center hover:scale-110 transition duration-300 ease-in-out bg-transparent"
 											src={product.image}
 											alt="imag"
 										/>
 										<div className="p-4">
 											<h4 className="text-xl  mb-5 text-gray-700 ">
-												{product.title}
+												{product.title.substring(0, 12)}....
+												{/* using the substring method to extract some of the text  */}
 											</h4>
 											<p className="mb-2  text-gray-600 text-xl ">
 												${product.price}
 											</p>
+											<span className=" flex justify-center">
+												<button
+													className=" center bg-primary text-white  hover:bg-indigo-700  p-3 w-40  m-2 rounded-lg "
+													type="button"
+												>
+													BUY NOW
+												</button>
+											</span>
 										</div>
 									</div>
 								))}
