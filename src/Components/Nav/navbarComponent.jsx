@@ -75,9 +75,7 @@ const NavBarComponent = () => {
 									{" "}
 									<NavLink to="/login"> Women </NavLink>{" "}
 								</li>
-								<li>
-									<NavLink to="/login"> Women </NavLink>{" "}
-								</li>
+								
 								<div>
 									<ul className=" text-2xl  mt-5    md:ml-40   text-center  md:flex justify-end  md:mt-0   md:space-x-6 md:space-y-0">
 										<div className="m-2 ">
