@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageCarousel from './ImageCarousel';
 import MainProduct from './MainProduct';
-import ProductNav from './ProductNav';
+import ProductNav from './Nav';
 
 const Product = () => {
     return (
