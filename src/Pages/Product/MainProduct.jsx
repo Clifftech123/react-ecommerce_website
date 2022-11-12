@@ -106,10 +106,10 @@ const MainProduct = () => {
 
 						{/* Showing all the product fetching  by the Api  */}
 						{
-							<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-10   px-20 md:px-40 ">
+							<div className="grid gap-2 md:gap-5 lg:grid-cols-3 mt-10   px-10 md:px-40 ">
 								{filter.map((product) => (
 									<div
-										className=" relative overflow-hidden    mt-10  rounded-lg md:hover:shadow-lg align-middle justify-center shadow-sm  lg:max-w-md  bg-white"
+										className=" relative overflow-hidden    mt-10  rounded-lg md:hover:shadow-lg align-middle justify-center shadow-md lg:max-w-md  bg-white"
 										key={product.id}
 									>
 										<img
