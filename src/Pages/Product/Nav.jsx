@@ -66,7 +66,6 @@ const ProductNav = () => {
 								<li className="  ">
 									<NavLink to="/product"> Home</NavLink>
 								</li>
-								<li>About</li>
 								<div className="flex  justify-center">
 									<button onClick={() => Navigate("/contact")}>Contact</button>
 								</div>
