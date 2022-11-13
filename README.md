@@ -5,19 +5,15 @@ This is a simple React and  firebase E-commerce web application.
  an account using google e-mail  and password. 
  A user will have and access to the variable product in deairs 
  when he create to get the access to the dashboard and the product page 
- . 
+ 
+ *Teach Stacks*
 
- `Contribution is not currently available`
-
- **Teach Stacks**
-
-
-  *Tailwind css 
-  *React js
-  *Firebase
+  -Tailwind css 
+  -React js
+  -Firebase
 
 
-   ![Home Page](/src/Components/assets/README.png)
+   ![Home Page](/src/Components/assets/projectoverview.mp4)
 
  Live [Demo](https://e-commerce-git-main-clifftech123.vercel.app/)
 
