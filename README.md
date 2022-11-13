@@ -11,9 +11,10 @@ This is a simple React and  firebase E-commerce web application.
   -Tailwind css 
   -React js
   -Firebase
+  
+  [ScreenRecorderProject9.webm](https://user-images.githubusercontent.com/89735381/201528118-8a255577-8757-4cfb-bb3b-61a6e3c0eee2.webm)
 
-
-   ![Home Page](/src/Components/assets/projectoverview.mp4)
+  
 
  Live [Demo](https://e-commerce-git-main-clifftech123.vercel.app/)
 
